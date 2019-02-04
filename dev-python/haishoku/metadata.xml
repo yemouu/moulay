@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>meeyou@tuta.io</email>
+	</maintainer>
+	<longdescription>
+		Grabs the dominant color or representative color palette from an image
+	</longdescription>
+</pkgmetadata>
