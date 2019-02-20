@@ -25,4 +25,3 @@ src_install() {
 	emake DESTDIR="${D}" PREFIX="/usr" install
 	mv "${D}/usr/share/doc/${PN}" "${D}/usr/share/doc/${P}"
 }
-
