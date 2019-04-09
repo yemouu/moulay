@@ -79,6 +79,7 @@ src_install() {
 	insinto /opt/${MY_PN}
 	doins -r usr/share/${MY_PN}/.
 	fperms +x /opt/${MY_PN}/${MY_BIN}
+	fperms 4755 /opt/${MY_PN}/chrome-sandbox
 	dosym ../../opt/${MY_PN}/${MY_BIN} usr/bin/${MY_PN}
 
 	use pax_kernel && pax-mark -m "${ED%/}"/opt/${MY_PN}/${MY_PN}
