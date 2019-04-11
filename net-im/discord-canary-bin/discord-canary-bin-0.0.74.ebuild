@@ -17,7 +17,7 @@ SRC_URI="https://dl-canary.discordapp.net/apps/linux/${PV}/${MY_PN}-${PV}.deb"
 LICENSE="all-rights-reserved"
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE="pax_kernel"
+IUSE="pax_kernel +suid"
 RESTRICT="mirror bindist"
 
 RDEPEND="
@@ -79,7 +79,9 @@ src_install() {
 	insinto /opt/${MY_PN}
 	doins -r usr/share/${MY_PN}/.
 	fperms +x /opt/${MY_PN}/${MY_BIN}
-	fperms 4755 /opt/${MY_PN}/chrome-sandbox
+	if use suid ; then
+		fperms 4755 /opt/${MY_PN}/chrome-sandbox
+	fi
 	dosym ../../opt/${MY_PN}/${MY_BIN} usr/bin/${MY_PN}
 
 	use pax_kernel && pax-mark -m "${ED%/}"/opt/${MY_PN}/${MY_PN}
