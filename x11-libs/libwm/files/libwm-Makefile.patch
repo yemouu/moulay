@@ -1,11 +1,11 @@
---- a/Makefile	2019-05-22 20:30:46.177752120 -0400
-+++ b/Makefile	2019-05-22 20:31:17.055751825 -0400
+--- a/Makefile
++++ b/Makefile
 @@ -3,6 +3,8 @@
  LIB = libwm.a
  HDR = wm.h
- 
+
 +PREFIX = /usr
 +
  .POSIX:
  .SUFFIXES: .a .o
- 
+

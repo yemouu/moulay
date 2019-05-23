@@ -14,7 +14,7 @@ IUSE=""
 
 DEPEND="x11-libs/libxcb
 	x11-libs/xcb-util-wm
-	x11-libs/libwm"
+	x11-libs/libwm[events]"
 RDEPEND="${DEPEND}"
 BDEPEND="virtual/yacc
 	sys-devel/flex"
