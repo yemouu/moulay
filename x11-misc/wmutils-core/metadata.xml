@@ -4,10 +4,7 @@
 	<maintainer type="person">
 		<email>meeyou@tuta.io</email>
 	</maintainer>
-	<use>
-		<flag name="events">apply patch to register events on windows</flag>
-	</use>
 	<longdescription lang="en">
-		A small library for X windows manipulation
+		wmutils' core is a set of tools for X windows manipulation. Each tool only has one purpose, to make it as flexible and reliable as possible.
 	</longdescription>
 </pkgmetadata>

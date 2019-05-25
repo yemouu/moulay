@@ -4,10 +4,7 @@
 	<maintainer type="person">
 		<email>meeyou@tuta.io</email>
 	</maintainer>
-	<use>
-		<flag name="events">apply patch to register events on windows</flag>
-	</use>
 	<longdescription lang="en">
-		A small library for X windows manipulation
+		opt is a set of optional utilities meant to accompany wmutils-core.
 	</longdescription>
 </pkgmetadata>

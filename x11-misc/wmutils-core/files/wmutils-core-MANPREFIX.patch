@@ -1,0 +1,9 @@
+--- a/config.mk
++++ b/config.mk
+@@ -1,5 +1,5 @@
+ PREFIX = /usr
+-MANPREFIX = $(PREFIX)/man
++MANPREFIX = $(PREFIX)/share/man
+
+ CC      = cc
+ LD      = $(CC)
