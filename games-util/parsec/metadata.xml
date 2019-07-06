@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>meeyou@tuta.io</email>
+	</maintainer>
+	<longdescription lang="en">
+		Invite your friends to play games with you online even if the game doesn't have online multiplayer. You can play together, watch them play, or take over the controller to show them how it's done.
+	</longdescription>
+</pkgmetadata>
