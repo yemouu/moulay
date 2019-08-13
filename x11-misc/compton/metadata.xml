@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>meeyou@tuta.io</email>
+	</maintainer>
+	<longdescription lang="en">
+		A compositor for X11, active fork.
+	</longdescription>
+	<use>
+		<flag name="config">build with support for config files</flag>
+	</use>
+</pkgmetadata>
