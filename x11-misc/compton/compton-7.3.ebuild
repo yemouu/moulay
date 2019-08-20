@@ -3,13 +3,11 @@
 
 EAPI=7
 
-inherit desktop meson git-r3 xdg
+inherit desktop meson xdg
 
 DESCRIPTION="A compositor for X11, active fork."
 HOMEPAGE="https://github.com/yshui/compton"
-EGIT_REPO_URI="${HOMEPAGE} -> ${P}.tar.gz"
-EGIT_BRANCH="stable/7"
-EGIT_COMMIT="1081078691e10ff57326f026abcb2edc1b330bdb"
+SRC_URL="https://github.com/yushi/compton/archive/v${PV}.tar.gz"
 
 LICENSE="MPL-2.0 MIT"
 SLOT="0"
