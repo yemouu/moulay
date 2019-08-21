@@ -7,7 +7,7 @@ inherit desktop meson xdg
 
 DESCRIPTION="A compositor for X11, active fork."
 HOMEPAGE="https://github.com/yshui/compton"
-SRC_URL="https://github.com/yushi/compton/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/yshui/compton/archive/v${PV}.tar.gz"
 
 LICENSE="MPL-2.0 MIT"
 SLOT="0"
