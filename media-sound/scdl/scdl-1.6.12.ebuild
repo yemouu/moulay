@@ -24,3 +24,5 @@ RDEPEND="dev-python/docopt[${PYTHON_USEDEP}]
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/${PN}-${COMMIT}"
+
+PATCHES=( "${FILESDIR}/scdl-xdg.patch" )

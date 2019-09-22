@@ -1,0 +1,27 @@
+diff -ur scdl-aaf64be7a27dad113e037be79a0079d430604e88-a/scdl/__init__.py scdl-aaf64be7a27dad113e037be79a0079d430604e88-b/scdl/__init__.py
+--- a/scdl/__init__.py	2018-05-10 10:05:47.000000000 -0400
++++ b/scdl/__init__.py	2019-09-04 20:23:08.817243416 -0400
+@@ -11,7 +11,7 @@
+ 
+ dir_path_to_conf = os.path.join(os.path.expanduser('~'), '.config/scdl')
+ if 'XDG_CONFIG_HOME' in os.environ:
+-    dir_path_to_conf = os.environ['XDG_CONFIG_HOME']
++    dir_path_to_conf = os.path.join(os.environ['XDG_CONFIG_HOME'], 'scdl')
+ 
+ file_path_to_conf = os.path.join(dir_path_to_conf, 'scdl.cfg')
+ text = """[scdl]
+diff -ur scdl-aaf64be7a27dad113e037be79a0079d430604e88-a/scdl/scdl.py scdl-aaf64be7a27dad113e037be79a0079d430604e88-b/scdl/scdl.py
+--- a/scdl/scdl.py	2018-05-10 10:05:47.000000000 -0400
++++ b/scdl/scdl.py	2019-09-04 19:19:36.531898503 -0400
+@@ -201,7 +201,10 @@
+     """
+     global token
+     config = configparser.ConfigParser()
+-    config.read(os.path.join(os.path.expanduser('~'), '.config/scdl/scdl.cfg'))
++    if 'XDG_CONFIG_HOME' in os.environ:
++        config.read(os.path.join(os.environ['XDG_CONFIG_HOME'], 'scdl/scdl.cfg'))
++    else:
++        config.read(os.path.join(os.path.expanduser('~'), '.config/scdl/scdl.cfg'))
+     try:
+         token = config['scdl']['auth_token']
+         path = config['scdl']['path']
