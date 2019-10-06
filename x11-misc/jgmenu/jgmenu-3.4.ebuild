@@ -22,16 +22,7 @@ DEPEND="x11-libs/libX11
 	dev-libs/libxml2
 	dev-libs/glib
 	lxde-base/menu-cache"
-	RDEPEND="${DEPEND}"
-	BDEPEND=""
+RDEPEND="${DEPEND}"
+BDEPEND=""
 
-src_prepare() {
-	if declare -p PATCHES | grep -q "^declare -a "; then
-		[[ -n ${PATCHES[@]} ]] && eapply "${PATCHES[@]}"
-	else
-		[[ -n ${PATCHES} ]] && eapply ${PATCHES}
-	fi
-	eapply_user
-
-	sed -i -e '1{x;s/^/first/;x;}' -e '1,/foo/{x;/first/s///;x;s/\/usr\/local/\/usr/;}' Makefile
-}
+PATCHES=( "${FILESDIR}/${PN}-Makefile.patch" )
