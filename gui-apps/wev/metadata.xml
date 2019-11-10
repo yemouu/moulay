@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription lang="en">
+    Tool for debugging events on a Wayland window, analagous to the X11 tool xev.
+  </longdescription>
+</pkgmetadata>
