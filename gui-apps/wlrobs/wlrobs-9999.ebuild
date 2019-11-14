@@ -5,7 +5,7 @@ EAPI=7
 
 inherit mercurial
 
-DESCRIPTION="Obs-studio plugin that allows you to screen capture on wlroots based wayland compositors."
+DESCRIPTION="OBS plugin allowing screen capture on wlroots based compositors."
 HOMEPAGE="https://hg.sr.ht/~scoopta/wlrobs"
 EHG_REPO_URI="https://hg.sr.ht/~scoopta/wlrobs"
 
