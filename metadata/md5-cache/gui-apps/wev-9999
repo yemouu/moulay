@@ -1,0 +1,12 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install unpack
+DEPEND=dev-libs/wayland x11-libs/libxkbcommon
+DESCRIPTION=Tool for debugging events on a Wayland window, analagous to the X11 tool xev.
+EAPI=7
+HOMEPAGE=https://git.sr.ht/~sircmpwn/wev
+LICENSE=MIT
+PROPERTIES=live
+RDEPEND=dev-libs/wayland x11-libs/libxkbcommon
+SLOT=0
+_eclasses_=git-r3	562b380fc59ae6a8622171d0acb777d1
+_md5_=036b14b422cf52571c4777ffb5a3d2fd
