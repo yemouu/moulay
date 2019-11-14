@@ -5,6 +5,6 @@
     <email>meeyou@tuta.io</email>
   </maintainer>
   <longdescription lang="en">
-    wlrobs is an obs-studio plugin that allows you to screen capture on wlroots based wayland compositors
+    Wlrobs is an obs-studio plugin that allows you to screen capture on wlroots based wayland compositors.
   </longdescription>
 </pkgmetadata>

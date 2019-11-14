@@ -17,7 +17,7 @@ EGO_VENDOR=(
 
 inherit golang-vcs-snapshot
 
-DESCRIPTION="Light and simple media downloader"
+DESCRIPTION="Light and simple media downloader."
 HOMEPAGE="https://github.com/mlvzk/piko"
 SRC_URI="https://github.com/mlvzk/piko/archive/v${PV}.tar.gz -> ${P}.tar.gz
 ${EGO_VENDOR_URI}"

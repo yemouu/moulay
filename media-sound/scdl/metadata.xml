@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>meeyou@tuta.io</email>
-	</maintainer>
-	<longdescription>This script is able to download music from SoundCloud and set id3tag to the downloaded music.</longdescription>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription>
+    This script is able to download music from SoundCloud and set id3tag to the downloaded music.
+  </longdescription>
 </pkgmetadata>

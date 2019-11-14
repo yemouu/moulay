@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python2_7 python3_{5,6,7} )
 inherit distutils-r1
 
-DESCRIPTION="Volume control for GNU/Linux desktops featuring per-app sliders"
+DESCRIPTION="Volume control for GNU/Linux desktops featuring per-app sliders."
 HOMEPAGE="https://buzz.github.io/volctl/"
 SRC_URI="https://github.com/buzz/${PN}/archive/${PV}.tar.gz"
 

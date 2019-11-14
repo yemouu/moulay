@@ -5,7 +5,7 @@ EAPI=7
 
 inherit desktop unpacker xdg
 
-DESCRIPTION="Remotely connect to a gaming pc for a low latency remote computing experience"
+DESCRIPTION="Remotely connect to a gaming pc for a low latency remote computing experience."
 HOMEPAGE="https://parsecgaming.com/"
 SRC_URI="https://s3.amazonaws.com/parsec-build/package/parsec-linux.deb"
 
@@ -20,8 +20,7 @@ DEPEND="sys-libs/glibc
 	x11-libs/libSM
 	x11-libs/libX11
 	x11-libs/libXxf86vm
-	vaapi? ( x11-libs/libva )
-"
+	vaapi? ( x11-libs/libva )"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 

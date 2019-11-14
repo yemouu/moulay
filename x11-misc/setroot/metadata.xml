@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-	<maintainer type="person">
-		<email>meeyou@tuta.io</email>
-	</maintainer>
-	<longdescription lang="en">
-		simple X background setter inspired by imlibsetroot and feh
-	</longdescription>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription lang="en">
+    Simple X background setter inspired by imlibsetroot and feh.
+  </longdescription>
 </pkgmetadata>

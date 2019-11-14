@@ -5,7 +5,7 @@ EAPI=7
 
 inherit xdg
 
-DESCRIPTION="A small and simple X11 menu"
+DESCRIPTION="A small and simple X11 menu."
 HOMEPAGE="https://github.com/johanmalm/jgmenu"
 SRC_URI="https://github.com/johanmalm/${PN}/archive/v${PV}.tar.gz"
 

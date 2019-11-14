@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_{5,6,7} )
 inherit distutils-r1
 
-DESCRIPTION="Grabs the dominant color or representative color palette from an image"
+DESCRIPTION="Grabs the dominant color or representative color palette from an image."
 HOMEPAGE="https://github.com/LanceGin/haishoku"
 SRC_URI="https://github.com/LanceGin/${PN}/archive/v${PV}.tar.gz"
 

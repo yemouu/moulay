@@ -5,6 +5,6 @@
     <email>meeyou@tuta.io</email>
   </maintainer>
   <longdescription lang="en">
-    wf-recorder is a utility program for screen recording of wlroots-based compositors (more specifically, those that support wlr-screencopy-v1 and xdg-output)
+    Wf-recorder is a utility program for screen recording of wlroots-based compositors (more specifically, those that support wlr-screencopy-v1 and xdg-output).
   </longdescription>
 </pkgmetadata>

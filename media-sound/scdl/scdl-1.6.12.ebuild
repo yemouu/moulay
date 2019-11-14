@@ -7,7 +7,7 @@ PYTHON_COMPAT=( python3_{5,6,7} )
 
 inherit distutils-r1
 
-DESCRIPTION="Soundcloud Music Downloader"
+DESCRIPTION="Soundcloud Music Downloader."
 HOMEPAGE="https://github.com/flyingrub/scdl"
 COMMIT="aaf64be7a27dad113e037be79a0079d430604e88"
 SRC_URI="https://github.com/flyingrub/scdl/archive/${COMMIT}.tar.gz"
