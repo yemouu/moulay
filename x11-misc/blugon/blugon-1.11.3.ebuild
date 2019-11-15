@@ -5,13 +5,12 @@ EAPI=7
 
 PYTHON_COMPAT=( python3_{5,6,7} )
 
-inherit git-r3 python-r1
-
-EGIT_REPO_URI="https://github.com/jumper149/blugon"
-EGIT_COMMIT="a77a20226e2933576b66e5f08ed1f6a420cdbf3e"
+inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X."
 HOMEPAGE="https://github.com/jumper149/blugon"
+COMMIT="a77a20226e2933576b66e5f08ed1f6a420cdbf3e"
+SRC_URI="https://github.com/jumper149/blugon/archive/${COMMIT}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"

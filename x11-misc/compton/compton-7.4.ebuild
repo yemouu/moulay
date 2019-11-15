@@ -16,17 +16,19 @@ IUSE="+config dbus +doc +opengl +pcre"
 
 DEPEND="x11-libs/libX11
 	x11-libs/libXext
+	x11-base/xorg-proto
 	x11-libs/libxcb
 	x11-libs/xcb-util-renderutil
 	x11-libs/xcb-util-image
 	x11-libs/pixman
 	dev-libs/libev
+	dev-libs/libevdev
 	dev-libs/uthash
 	dbus? ( sys-apps/dbus )
 	config? ( dev-libs/libconfig
 		dev-libs/libxdg-basedir )
 	opengl? ( media-libs/mesa )
-	pcre? ( dev-libs/libpcre )"
+	pcre? ( dev-libs/libpcre2 )"
 RDEPEND="${DEPEND}"
 BDEPEND="doc? ( app-text/asciidoc )"
 

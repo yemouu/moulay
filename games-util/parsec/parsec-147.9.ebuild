@@ -15,12 +15,12 @@ KEYWORDS="~amd64"
 IUSE="vaapi"
 
 DEPEND="sys-libs/glibc
-	sys-devel/gcc:*
-	media-libs/mesa
 	x11-libs/libSM
 	x11-libs/libX11
 	x11-libs/libXxf86vm
-	vaapi? ( x11-libs/libva )"
+	vaapi? ( x11-libs/libva )
+	|| ( media-libs/mesa
+		media-libs/libglvnd )"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 

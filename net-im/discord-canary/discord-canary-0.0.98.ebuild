@@ -14,7 +14,8 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="media-libs/alsa-lib
+DEPEND="sys-libs/glibc
+	media-libs/alsa-lib
 	gnome-base/gconf
 	x11-libs/libnotify
 	dev-libs/nspr
@@ -22,7 +23,6 @@ DEPEND="media-libs/alsa-lib
 	x11-libs/libXScrnSaver
 	x11-libs/libXtst
 	sys-libs/libcxx"
-	#dev-libs/libappindicator
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
