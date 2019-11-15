@@ -1,13 +1,13 @@
 DEFINED_PHASES=install postinst postrm preinst prepare unpack
-DEPEND=sys-libs/glibc sys-devel/gcc:* media-libs/mesa x11-libs/libSM x11-libs/libX11 x11-libs/libXxf86vm vaapi? ( x11-libs/libva ) dev-util/desktop-file-utils x11-misc/shared-mime-info
+DEPEND=sys-libs/glibc x11-libs/libSM x11-libs/libX11 x11-libs/libXxf86vm vaapi? ( x11-libs/libva ) || ( media-libs/mesa media-libs/libglvnd ) dev-util/desktop-file-utils x11-misc/shared-mime-info
 DESCRIPTION=Remotely connect to a gaming pc for a low latency remote computing experience.
 EAPI=7
 HOMEPAGE=https://parsecgaming.com/
 IUSE=vaapi
 KEYWORDS=~amd64
 LICENSE=all-rights-reserved
-RDEPEND=sys-libs/glibc sys-devel/gcc:* media-libs/mesa x11-libs/libSM x11-libs/libX11 x11-libs/libXxf86vm vaapi? ( x11-libs/libva )
+RDEPEND=sys-libs/glibc x11-libs/libSM x11-libs/libX11 x11-libs/libXxf86vm vaapi? ( x11-libs/libva ) || ( media-libs/mesa media-libs/libglvnd )
 SLOT=0
 SRC_URI=https://s3.amazonaws.com/parsec-build/package/parsec-linux.deb
 _eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	unpacker	3cd8bad0d31e525cd26be1bfa4e61631	xdg	c7ba313ea1eaf266f95cc6235f7d6a07	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=cb8a0664bf81e9d1a2e36fd65564d31d
+_md5_=6b046ede3249a2be393ec124232d6e6d
