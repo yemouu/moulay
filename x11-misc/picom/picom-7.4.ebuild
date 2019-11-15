@@ -5,9 +5,9 @@ EAPI=7
 
 inherit desktop meson xdg
 
-DESCRIPTION="A compositor for X11, active fork."
-HOMEPAGE="https://github.com/yshui/compton"
-SRC_URI="https://github.com/yshui/compton/archive/v${PV}.tar.gz"
+DESCRIPTION="A lightweight compositor for X11 (previously a compton fork)."
+HOMEPAGE="https://github.com/yshui/${PN}"
+SRC_URI="https://github.com/yshui/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MPL-2.0 MIT"
 SLOT="0"

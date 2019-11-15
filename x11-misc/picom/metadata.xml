@@ -5,7 +5,7 @@
     <email>meeyou@tuta.io</email>
   </maintainer>
   <longdescription lang="en">
-    A compositor for X11, active fork.
+    This is forked from the original Compton because it seems to have become unmaintained.
   </longdescription>
   <use>
     <flag name="config">build with support for config files</flag>
