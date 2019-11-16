@@ -27,3 +27,13 @@ src_install() {
 	insinto ${OBS_PLUGIN_DIR}/wlrobs/bin/64bit
 	doins Release/libwlrobs.so
 }
+
+pkg_postinst() {
+	elog
+	elog "To use this plugin, you will have to symlink it into the plugins"
+	elog "directory. If XDG_CONFIG_HOME is set,"
+	elog "ln -s /usr/share/obs/obs-plugins/wlrobs $XDG_CONFIG_HOME/obs-studio/plugins"
+	elog "else,"
+	elog "ln -s /usr/share/obs/obs-plugins/wlrobs $HOME/.config/obs-studio/plugins"
+	elog
+}
