@@ -16,7 +16,6 @@ IUSE=""
 
 DEPEND="sys-libs/glibc
 	media-libs/alsa-lib
-	gnome-base/gconf
 	x11-libs/libnotify
 	dev-libs/nspr
 	dev-libs/nss
