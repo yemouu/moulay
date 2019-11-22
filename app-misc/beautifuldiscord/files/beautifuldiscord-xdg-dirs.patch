@@ -1,0 +1,17 @@
+diff -u -r BeautifulDiscord-a/beautifuldiscord/app.py BeautifulDiscord-b/beautifuldiscord/app.py
+--- a/beautifuldiscord/app.py	2019-11-21 18:46:56.890998829 -0500
++++ b/beautifuldiscord/app.py	2019-11-21 18:59:07.282857910 -0500
+@@ -72,7 +72,12 @@
+             # To get the version number we have to iterate over ~/.config/discordcanary and find the
+             # folder with the highest version number
+             discord_version = os.path.basename(self.path).replace('-', '')
+-            config = os.path.expanduser(os.path.join('~/.config', discord_version))
++            if os.environ['XDG_CONFIG_HOME']:
++                config = os.path.expanduser(os.path.join(os.environ['XDG_CONFIG_HOME'],
++                                                        discord_version))
++            else:
++                config = os.path.expanduser(os.path.join('~/.config', discord_version))
++
+
+             versions_found = {}
+             for subdirectory in os.listdir(config):
