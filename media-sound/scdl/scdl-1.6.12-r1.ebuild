@@ -9,7 +9,7 @@ inherit distutils-r1
 
 DESCRIPTION="Soundcloud Music Downloader."
 HOMEPAGE="https://github.com/flyingrub/scdl"
-COMMIT="aaf64be7a27dad113e037be79a0079d430604e88"
+COMMIT="30968bc5a19703fcf3332613f96e497e43bd6771"
 SRC_URI="https://github.com/flyingrub/scdl/archive/${COMMIT}.tar.gz"
 
 LICENSE="GPL-2"
