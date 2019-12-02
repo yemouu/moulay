@@ -3,15 +3,15 @@
 
 EAPI=7
 
-inherit git-r3 meson
+inherit meson
 
 DESCRIPTION="Utility for screen recording of wlroots-based compositors."
 HOMEPAGE="https://github.com/ammen99/wf-recorder"
-EGIT_REPO_URI="https://github.com/ammen99/wf-recorder"
+SRC_URI="https://github.com/ammen99/${PN}/archive/v${PV}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
+KEYWORDS="~amd64"
 IUSE="+opencl"
 
 RDEPEND="media-video/ffmpeg
@@ -23,5 +23,6 @@ src_configure() {
 	local emesonargs=(
 		-Dopencl=$(usex opencl enabled disabled)
 	)
+
 	meson_src_configure
 }
