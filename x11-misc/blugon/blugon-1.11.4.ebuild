@@ -9,8 +9,7 @@ inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X."
 HOMEPAGE="https://github.com/jumper149/blugon"
-COMMIT="a77a20226e2933576b66e5f08ed1f6a420cdbf3e"
-SRC_URI="https://github.com/jumper149/blugon/archive/${COMMIT}.tar.gz"
+SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
