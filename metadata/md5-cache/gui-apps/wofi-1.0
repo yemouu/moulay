@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=dev-libs/wayland x11-libs/gtk+:3 virtual/pkgconfig
+DESCRIPTION=Wofi is a menu program for wlroots based wayland compositors.
+EAPI=7
+HOMEPAGE=https://hg.sr.ht/~scoopta/wofi
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=dev-libs/wayland x11-libs/gtk+:3
+SLOT=0
+SRC_URI=https://hg.sr.ht/~scoopta/wofi/archive/v1.0.tar.gz -> wofi-1.0.tar.gz
+_md5_=50ae965361d9203875b75077ca5f5a95
