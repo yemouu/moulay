@@ -16,5 +16,3 @@ KEYWORDS=""
 
 RDEPEND="dev-python/psutil[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}"
-
-PATCHES=( "${FILESDIR}/beautifuldiscord-xdg-dirs.patch" )
