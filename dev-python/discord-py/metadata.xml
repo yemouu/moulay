@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription lang="en">
+    A modern, easy to use, feature-rich, and async ready API wrapper for Discord written in Python.
+  </longdescription>
+  <use>
+    <flag name="voice">Install PyNaCl for voice support</flag>
+  </use>
+</pkgmetadata>
