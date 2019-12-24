@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription lang="en">
+    Websockets is a library for building WebSocket servers and clients in Python with a focus on correctness and simplicity. Built on top of asyncio, Python's standard asynchronous I/O framework, it provides an elegant coroutine-based API.
+  </longdescription>
+</pkgmetadata>
