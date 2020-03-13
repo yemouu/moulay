@@ -16,9 +16,9 @@ emaint sync -r ymlay
 
 ## List of Packages
  - [app-editors/kakoune](https://gitlab.com/yemou/ymlay/tree/master/app-editors/kakoune)
- - [app-misc/beautifuldiscord](https://gitlab.com/yemou/ymlay/tree/master/app-misc/beautifuldiscord
+ - [app-misc/beautifuldiscord](https://gitlab.com/yemou/ymlay/tree/master/app-misc/beautifuldiscord)
  - [app-misc/volctl](https://gitlab.com/yemou/ymlay/tree/master/app-misc/volctl)
- - [dev-python/discord-py](https://gitlab.com/yemou/ymlay/tree/master/dev-python/dicsord-py)
+ - [dev-python/discord-py](https://gitlab.com/yemou/ymlay/tree/master/dev-python/discord-py)
  - [dev-python/websockets](https://gitlab.com/yemou/ymlay/tree/master/dev-python/websockets)
  - [dev-util/kak-lsp](https://gitlab.com/yemou/ymlay/tree/master/dev-util/kak-lsp)
  - [gui-apps/wev](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wev)
