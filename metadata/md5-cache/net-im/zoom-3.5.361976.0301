@@ -1,0 +1,14 @@
+BDEPEND=dev-util/patchelf
+DEFINED_PHASES=install prepare unpack
+DEPEND=app-i18n/ibus dev-db/sqlite dev-libs/glib dev-libs/libxslt dev-qt/qt3d[gamepad,qml] dev-qt/qtconcurrent dev-qt/qtdeclarative dev-qt/qtgui[eglfs] dev-qt/qtmultimedia dev-qt/qtquickcontrols2 dev-qt/qtsql dev-qt/qtxmlpatterns media-libs/fontconfig media-libs/mesa media-sound/pulseaudio sys-apps/dbus x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/xcb-util-image x11-libs/xcb-util-keysyms
+DESCRIPTION=Video Conferencing and Web Conferencing Service.
+EAPI=7
+HOMEPAGE=https://www.zoom.us
+KEYWORDS=~amd64
+LICENSE=all-rights-reserved
+RDEPEND=app-i18n/ibus dev-db/sqlite dev-libs/glib dev-libs/libxslt dev-qt/qt3d[gamepad,qml] dev-qt/qtconcurrent dev-qt/qtdeclarative dev-qt/qtgui[eglfs] dev-qt/qtmultimedia dev-qt/qtquickcontrols2 dev-qt/qtsql dev-qt/qtxmlpatterns media-libs/fontconfig media-libs/mesa media-sound/pulseaudio sys-apps/dbus x11-libs/libxcb x11-libs/libXcomposite x11-libs/libXi x11-libs/libXrender x11-libs/libXtst x11-libs/xcb-util-image x11-libs/xcb-util-keysyms
+RESTRICT=strip
+SLOT=0
+SRC_URI=https://zoom.us/client/3.5.361976.0301/zoom_amd64.deb -> zoom-3.5.361976.0301_amd64.deb
+_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	unpacker	3cd8bad0d31e525cd26be1bfa4e61631	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=bdd1d60ccd76773f5335d3ec6051e1ad
