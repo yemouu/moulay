@@ -25,7 +25,10 @@ emaint sync -r ymlay
  - [gui-apps/wf-recorder](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wf-recorder)
  - [gui-apps/wlr-randr](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wlr-randr)
  - [net-im/discord-canary](https://gitlab.com/yemou/ymlay/tree/master/net-im/discord-canary)
+ - [net-im/zoom](https://gitlab.com/yemou/ymlay/tree/master/net-im/zoom)
  - [gui-apps/wofi](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wofi)
+ - [gui-libs/wf-config](https://gitlab.com/yemou/ymlay/tree/master/gui-libs/wf-config)
+ - [gui-wm/wayfire](https://gitlab.com/yemou/ymlay/tree/master/gui-wm/wayfire)
  - [x11-misc/blugon](https://gitlab.com/yemou/ymlay/tree/master/x11-misc/blugon)
  - [x11-misc/setroot](https://gitlab.com/yemou/ymlay/tree/master/x11-misc/setroot)
 
