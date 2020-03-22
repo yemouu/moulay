@@ -22,7 +22,7 @@ RDEPEND="dev-libs/libevdev
 	gui-libs/wlroots[X=]
 	media-libs/freetype
 	media-libs/glm
-	media-libs/libjpeg-turbo
+	virtual/jpeg
 	media-libs/libpng
 	media-libs/mesa
 	x11-libs/cairo
@@ -33,3 +33,10 @@ DEPEND="${RDEPEND}"
 BDEPEND=""
 
 DOCS=( wayfire.ini README.md )
+
+src_install() {
+	meson_src_install
+	insinto /usr/share/wayland-sessions/
+	insotps -m644
+	doins wayfire.desktop
+}
