@@ -31,3 +31,5 @@ RDEPEND="dev-libs/libevdev
 	x11-libs/pixman"
 DEPEND="${RDEPEND}"
 BDEPEND=""
+
+DOCS=( wayfire.ini README.md )
