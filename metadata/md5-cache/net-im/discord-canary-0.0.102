@@ -8,5 +8,5 @@ LICENSE=all-rights-reserved
 RDEPEND=sys-libs/glibc media-libs/alsa-lib x11-libs/libnotify dev-libs/nspr net-print/cups dev-libs/nss x11-libs/libXScrnSaver x11-libs/libXtst sys-libs/libcxx
 SLOT=0
 SRC_URI=https://dl-canary.discordapp.net/apps/linux/0.0.102/discord-canary-0.0.102.deb
-_eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	unpacker	3cd8bad0d31e525cd26be1bfa4e61631	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_eclasses_=desktop	3b1f1d9a6b749c9ce2d5182877265b23	unpacker	3cd8bad0d31e525cd26be1bfa4e61631	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
 _md5_=67703cdb5c0071e0efaaeed85c53ef88
