@@ -38,6 +38,7 @@ QA_PREBUILT="
 	opt/discord-canary/DiscordCanary
 	opt/discord-canary/swiftshader/libEGL.so
 	opt/discord-canary/swiftshader/libGLESv2.so
+	opt/discord-canary/swiftshader/libvk_swiftshader.so
 "
 
 src_install() {
