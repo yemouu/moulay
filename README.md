@@ -1,4 +1,4 @@
-# ymlay
+# moulay
 Gentoo Overlay with random packages.
 
 I try to update this overlay every Friday.
@@ -9,24 +9,24 @@ If you want to use this overlay, install `app-eselect/eselect-repository`, add t
 ```
 emerge -a app-eselect/eselect-repository
 
-eselect repository add ymlay git https://gitlab.com/yemou/ymlay
+eselect repository add moulay git https://github.com/yemouu/moulay
 
-emaint sync -r ymlay
+emaint sync -r moulay
 ```
 
 ### Note
 Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Project:GURU)
 
 ## List of Packages
- - [app-editors/kakoune](https://gitlab.com/yemou/ymlay/tree/master/app-editors/kakoune)
- - [app-misc/beautifuldiscord](https://gitlab.com/yemou/ymlay/tree/master/app-misc/beautifuldiscord)
- - [app-misc/volctl](https://gitlab.com/yemou/ymlay/tree/master/app-misc/volctl)
- - [dev-python/discord-py](https://gitlab.com/yemou/ymlay/tree/master/dev-python/discord-py)
- - [dev-util/kak-lsp](https://gitlab.com/yemou/ymlay/tree/master/dev-util/kak-lsp)
- - [gui-apps/wev](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wev)
- - [gui-apps/wf-recorder](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wf-recorder)
- - [gui-apps/wlr-randr](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wlr-randr)
- - [gui-apps/wofi](https://gitlab.com/yemou/ymlay/tree/master/gui-apps/wofi)
- - [net-im/discord-canary](https://gitlab.com/yemou/ymlay/tree/master/net-im/discord-canary)
- - [x11-misc/blugon](https://gitlab.com/yemou/ymlay/tree/master/x11-misc/blugon)
- - [x11-misc/setroot](https://gitlab.com/yemou/ymlay/tree/master/x11-misc/setroot)
+ - [app-editors/kakoune](https://github.com/yemouu/moulay/tree/master/app-editors/kakoune)
+ - [app-misc/beautifuldiscord](https://github.com/yemouu/moulay/tree/master/app-misc/beautifuldiscord)
+ - [app-misc/volctl](https://github.com/yemouu/moulay/tree/master/app-misc/volctl)
+ - [dev-python/discord-py](https://github.com/yemouu/moulay/tree/master/dev-python/discord-py)
+ - [dev-util/kak-lsp](https://github.com/yemouu/moulay/tree/master/dev-util/kak-lsp)
+ - [gui-apps/wev](https://github.com/yemouu/moulay/tree/master/gui-apps/wev)
+ - [gui-apps/wf-recorder](https://github.com/yemouu/moulay/tree/master/gui-apps/wf-recorder)
+ - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
+ - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
+ - [net-im/discord-canary](https://github.com/yemouu/moulay/tree/master/net-im/discord-canary)
+ - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
+ - [x11-misc/setroot](https://github.com/yemouu/moulay/tree/master/x11-misc/setroot)
