@@ -27,6 +27,5 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [gui-apps/wf-recorder](https://github.com/yemouu/moulay/tree/master/gui-apps/wf-recorder)
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
- - [net-im/discord-canary](https://github.com/yemouu/moulay/tree/master/net-im/discord-canary)
  - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/setroot](https://github.com/yemouu/moulay/tree/master/x11-misc/setroot)
