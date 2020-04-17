@@ -7,7 +7,7 @@ inherit meson
 
 DESCRIPTION="Utility for screen recording of wlroots-based compositors."
 HOMEPAGE="https://github.com/ammen99/wf-recorder"
-SRC_URI="https://github.com/ammen99/${PN}/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/ammen99/${PN}/releases/download/v${PV}/${P}.tar.xz"
 
 LICENSE="MIT"
 SLOT="0"
