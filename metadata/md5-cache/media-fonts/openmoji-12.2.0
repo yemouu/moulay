@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst postrm setup unpack
+DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
+DESCRIPTION=Open source emojis for designers, developers and everyone else!
+EAPI=7
+HOMEPAGE=https://openmoji.org/
+IUSE=X
+KEYWORDS=~amd64
+LICENSE=CC-BY-SA-4.0
+SLOT=0
+SRC_URI=https://github.com/hfg-gmuend/openmoji/releases/download/12.2.0/openmoji-font.zip
+_eclasses_=font	dd073b36fe3fd8b868c23bc23209db45	unpacker	3cd8bad0d31e525cd26be1bfa4e61631
+_md5_=8e971aa7626ad6811528faffcb4831a6
