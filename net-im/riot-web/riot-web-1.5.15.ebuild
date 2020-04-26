@@ -10,7 +10,7 @@ HOMEPAGE="https://about.riot.im/"
 SRC_URI="https://packages.riot.im/debian/pool/main/r/${PN}/${PN}_${PV}_amd64.deb"
 IUSE=""
 
-LICENSE=""
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
@@ -45,15 +45,22 @@ src_install() {
 	domenu usr/share/applications/*.desktop
 	gzip -d usr/share/doc/riot-web/changelog.gz
 	dodoc usr/share/doc/riot-web/changelog
-	
+
 	for size in 16 24 48 64 96 128 256 512
 	do
 		doicon -s ${size} usr/share/icons/hicolor/${size}x${size}/apps/*.png
 	done
 
+	# make repoman leave me alone D:
+	mkdir usr/bin
+	cd usr/bin
+	ln -s ../../opt/Riot/riot-web ./
+	cd ../../
+
 	insinto /opt
 	doins -r opt/*
+	insinto /usr/bin
+	doins usr/bin/riot-web
 
-	fperms +x /opt/Riot/${PN}
-	dosym /opt/Riot/${PN} /usr/bin/${PN}
+	fperms +x /opt/Riot/riot-web
 }
