@@ -17,7 +17,6 @@ KEYWORDS="~amd64"
 RDEPEND="
 app-accessibility/at-spi2-core
 app-crypt/libsecret
-dev-libs/libappindicator
 dev-libs/nss
 sys-apps/util-linux
 x11-libs/gtk+:3
@@ -26,6 +25,7 @@ x11-libs/libXScrnSaver
 x11-libs/libXtst
 x11-misc/xdg-utils
 "
+
 DEPEND="${RDEPEND}"
 BDEPEND=""
 
