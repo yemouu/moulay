@@ -24,7 +24,6 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [dev-python/discord-py](https://github.com/yemouu/moulay/tree/master/dev-python/discord-py)
  - [dev-util/kak-lsp](https://github.com/yemouu/moulay/tree/master/dev-util/kak-lsp)
  - [gui-apps/wev](https://github.com/yemouu/moulay/tree/master/gui-apps/wev)
- - [gui-apps/wf-recorder](https://github.com/yemouu/moulay/tree/master/gui-apps/wf-recorder)
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
  - [net-im/riot-web](https://github.com/yemouu/moulay/tree/master/net-im/riot-web)
