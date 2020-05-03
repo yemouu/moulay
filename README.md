@@ -26,6 +26,7 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [gui-apps/wev](https://github.com/yemouu/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
+ - [media-fonts/openmoji](https://github.com/yemouu/moulay/tree/master/media-fonts/openmoji)
  - [net-im/riot-web](https://github.com/yemouu/moulay/tree/master/net-im/riot-web)
  - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/setroot](https://github.com/yemouu/moulay/tree/master/x11-misc/setroot)
