@@ -30,21 +30,22 @@ DEPEND="${RDEPEND}"
 BDEPEND=""
 
 QA_PREBUILT="
-opt/Riot/riot-web
+opt/Riot/crashpad_handler
 opt/Riot/libEGL.so
 opt/Riot/libffmpeg.so
 opt/Riot/libGLESv2.so
+opt/Riot/libvk_swiftshader.so
+opt/Riot/riot-desktop
 opt/Riot/swiftshader/libEGL.so
 opt/Riot/swiftshader/libGLESv2.so
-opt/Riot/swiftshader/libvk_swiftshader.so
 "
 
 S="${WORKDIR}"
 
 src_install() {
 	domenu usr/share/applications/*.desktop
-	gzip -d usr/share/doc/riot-web/changelog.gz
-	dodoc usr/share/doc/riot-web/changelog
+	gzip -d usr/share/doc/riot-desktop/changelog.gz
+	dodoc usr/share/doc/riot-desktop/changelog
 
 	for size in 16 24 48 64 96 128 256 512
 	do
@@ -54,13 +55,13 @@ src_install() {
 	# make repoman leave me alone D:
 	mkdir usr/bin
 	cd usr/bin
-	ln -s ../../opt/Riot/riot-web ./
+	ln -s ../../opt/Riot/riot-desktop ./
 	cd ../../
 
 	insinto /opt
 	doins -r opt/*
 	insinto /usr/bin
-	doins usr/bin/riot-web
+	doins usr/bin/riot-desktop
 
-	fperms +x /opt/Riot/riot-web
+	fperms +x /opt/Riot/riot-desktop
 }
