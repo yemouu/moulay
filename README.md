@@ -18,7 +18,6 @@ emaint sync -r moulay
 Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Project:GURU)
 
 ## List of Packages
- - [app-editors/kakoune](https://github.com/yemouu/moulay/tree/master/app-editors/kakoune)
  - [app-misc/beautifuldiscord](https://github.com/yemouu/moulay/tree/master/app-misc/beautifuldiscord)
  - [app-misc/volctl](https://github.com/yemouu/moulay/tree/master/app-misc/volctl)
  - [dev-python/discord-py](https://github.com/yemouu/moulay/tree/master/dev-python/discord-py)
@@ -26,7 +25,6 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [gui-apps/wev](https://github.com/yemouu/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
- - [media-fonts/openmoji](https://github.com/yemouu/moulay/tree/master/media-fonts/openmoji)
- - [net-im/riot-web](https://github.com/yemouu/moulay/tree/master/net-im/riot-web)
+ - [net-im/riot-desktop](https://github.com/yemouu/moulay/tree/master/net-im/riot-desktop)
  - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/setroot](https://github.com/yemouu/moulay/tree/master/x11-misc/setroot)
