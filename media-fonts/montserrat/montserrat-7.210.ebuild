@@ -5,7 +5,7 @@ EAPI=7
 
 inherit font
 
-DESCRIPTION="Fontface inspired by the traditional Montserrat neighborhood of Buenos Aires."
+DESCRIPTION="Fontface inspired by the traditional Montserrat neighborhood of Buenos Aires"
 HOMEPAGE="https://fonts.google.com/specimen/Montserrat"
 SRC_URI="https://github.com/JulietaUla/${PN}/archive/v${PV}.tar.gz"
 

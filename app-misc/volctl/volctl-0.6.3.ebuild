@@ -1,4 +1,4 @@
-# Copyright 2019-2020 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -6,7 +6,7 @@ EAPI=7
 PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
-DESCRIPTION="Volume control for GNU/Linux desktops featuring per-app sliders."
+DESCRIPTION="Volume control for GNU/Linux desktops featuring per-app sliders"
 HOMEPAGE="https://buzz.github.io/volctl/"
 SRC_URI="https://github.com/buzz/${PN}/archive/${PV}.tar.gz"
 

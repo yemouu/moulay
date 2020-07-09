@@ -5,7 +5,7 @@ EAPI=7
 
 inherit git-r3 savedconfig
 
-DESCRIPTION="Desktop notifications, the UNIX way."
+DESCRIPTION="Desktop notifications, the UNIX way"
 HOMEPAGE="https://github.com/Sweets/tiramisu"
 EGIT_REPO_URI="https://github.com/Sweets/tiramisu"
 

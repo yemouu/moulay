@@ -1,6 +1,6 @@
 DEFINED_PHASES=install postinst postrm setup
 DEPEND=X? ( >=x11-apps/mkfontscale-1.2.0 media-fonts/encodings )
-DESCRIPTION=Fontface inspired by the traditional Montserrat neighborhood of Buenos Aires.
+DESCRIPTION=Fontface inspired by the traditional Montserrat neighborhood of Buenos Aires
 EAPI=7
 HOMEPAGE=https://fonts.google.com/specimen/Montserrat
 IUSE=otf +ttf X
@@ -10,4 +10,4 @@ REQUIRED_USE=^^ ( ttf otf )
 SLOT=0
 SRC_URI=https://github.com/JulietaUla/montserrat/archive/v7.210.tar.gz
 _eclasses_=font	dd073b36fe3fd8b868c23bc23209db45
-_md5_=64d225187709d311a345e3ce32aaa91b
+_md5_=1ccb37a6ebdc7a98feb1b52dfd1fc7fc

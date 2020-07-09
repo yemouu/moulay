@@ -125,7 +125,7 @@ winapi-x86_64-pc-windows-gnu-0.4.0
 
 inherit cargo
 
-DESCRIPTION="Kakoune Language Server Protocol Client."
+DESCRIPTION="Kakoune Language Server Protocol Client"
 HOMEPAGE="https://github.com/ul/kak-lsp"
 SRC_URI="https://github.com/ul/${PN}/archive/v${PV}.tar.gz
 	$(cargo_crate_uris $CRATES)"

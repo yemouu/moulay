@@ -1,4 +1,4 @@
-# Copyright 2019-2020 Gentoo Authors
+# Copyright 1999-2020 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
@@ -10,7 +10,7 @@ inherit distutils-r1
 MY_PN="${PN/-/.}"
 MY_P="${MY_PN}-${PV}"
 
-DESCRIPTION="API wrapper for Discord written in Python."
+DESCRIPTION="API wrapper for Discord written in Python"
 HOMEPAGE="https://github.com/Rapptz/discord.py"
 SRC_URI="https://github.com/Rapptz/discord.py/archive/v${PV}.tar.gz"
 
