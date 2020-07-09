@@ -25,7 +25,6 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [dev-util/kak-lsp](https://github.com/yemouu/moulay/tree/master/dev-util/kak-lsp)
  - [gui-apps/wev](https://github.com/yemouu/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
- - [gui-apps/wofi](https://github.com/yemouu/moulay/tree/master/gui-apps/wofi)
  - [media-fonts/montserrat](https://github.com/yemouu/moulay/tree/master/media-fonts/montserrat)
  - [net-im/riot-desktop](https://github.com/yemouu/moulay/tree/master/net-im/riot-desktop)
  - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
