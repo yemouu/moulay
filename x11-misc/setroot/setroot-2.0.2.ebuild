@@ -12,13 +12,17 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="xinerama"
 
-DEPEND="media-libs/imlib2
-	xinerama? ( x11-libs/libXinerama )"
+DEPEND="
+	media-libs/imlib2
+	xinerama? ( x11-libs/libXinerama )
+"
 RDEPEND="${DEPEND}"
-BDEPEND=""
-
-PATCHES=( "${FILESDIR}/setroot-Makefile.patch" )
 
 src_compile() {
 	emake xinerama=$(usex xinerama 1 0)
+}
+
+src_install() {
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
+	einstalldocs
 }

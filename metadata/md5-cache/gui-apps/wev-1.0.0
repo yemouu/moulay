@@ -1,6 +1,6 @@
 DEFINED_PHASES=install
 DEPEND=dev-libs/wayland x11-libs/libxkbcommon
-DESCRIPTION=Tool for debugging events on a Wayland window, analagous to the X11 tool xev
+DESCRIPTION=Tool for debugging events on a Wayland window
 EAPI=7
 HOMEPAGE=https://git.sr.ht/~sircmpwn/wev
 KEYWORDS=~amd64
@@ -8,4 +8,4 @@ LICENSE=MIT
 RDEPEND=dev-libs/wayland x11-libs/libxkbcommon
 SLOT=0
 SRC_URI=https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
-_md5_=4b6f35306e6d0f67da36a2b9355a5da9
+_md5_=cd83b6dc48187037fd1f889214ae0869

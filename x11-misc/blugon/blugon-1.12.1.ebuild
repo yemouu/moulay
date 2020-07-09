@@ -4,7 +4,6 @@
 EAPI=7
 
 PYTHON_COMPAT=( python3_{6,7,8} )
-
 inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X"
@@ -16,10 +15,11 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE="xgamma"
 
-DEPEND="x11-libs/libX11
+DEPEND="
+	x11-libs/libX11
 	x11-libs/libXrandr
-	xgamma? ( x11-apps/xgamma )"
+	xgamma? ( x11-apps/xgamma )
+"
 RDEPEND="${DEPEND}"
-BDEPEND=""
 
-PATCHES=( ${FILESDIR}/${PN}-Makefile.patch )
+PATCHES=( ${FILESDIR}/${PN}-no-manpage-compression.patch )

@@ -6,38 +6,35 @@ EAPI=7
 inherit desktop unpacker xdg
 
 DESCRIPTION="A feature-rich client for Matrix.org"
-HOMEPAGE="https://about.riot.im/"
+HOMEPAGE="https://about.riot.im"
 SRC_URI="https://packages.riot.im/debian/pool/main/r/${PN}/${PN}_${PV}_amd64.deb"
-IUSE=""
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 
 RDEPEND="
-app-accessibility/at-spi2-core
-app-crypt/libsecret
-dev-libs/nss
-sys-apps/util-linux
-x11-libs/gtk+:3
-x11-libs/libnotify
-x11-libs/libXScrnSaver
-x11-libs/libXtst
-x11-misc/xdg-utils
+	app-accessibility/at-spi2-core
+	app-crypt/libsecret
+	dev-libs/nss
+	sys-apps/util-linux
+	x11-libs/gtk+:3
+	x11-libs/libnotify
+	x11-libs/libXScrnSaver
+	x11-libs/libXtst
+	x11-misc/xdg-utils
 "
-
 DEPEND="${RDEPEND}"
-BDEPEND=""
 
 QA_PREBUILT="
-opt/Riot/crashpad_handler
-opt/Riot/libEGL.so
-opt/Riot/libffmpeg.so
-opt/Riot/libGLESv2.so
-opt/Riot/libvk_swiftshader.so
-opt/Riot/riot-desktop
-opt/Riot/swiftshader/libEGL.so
-opt/Riot/swiftshader/libGLESv2.so
+	opt/Riot/crashpad_handler
+	opt/Riot/libEGL.so
+	opt/Riot/libffmpeg.so
+	opt/Riot/libGLESv2.so
+	opt/Riot/libvk_swiftshader.so
+	opt/Riot/riot-desktop
+	opt/Riot/swiftshader/libEGL.so
+	opt/Riot/swiftshader/libGLESv2.so
 "
 
 S="${WORKDIR}"

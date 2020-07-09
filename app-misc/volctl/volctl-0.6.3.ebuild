@@ -3,8 +3,8 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
+PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1
 
 DESCRIPTION="Volume control for GNU/Linux desktops featuring per-app sliders"
@@ -15,6 +15,8 @@ LICENSE="GPL-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-DEPEND="media-sound/pulseaudio
-	dev-python/pygobject:3"
+DEPEND="
+	dev-python/pygobject:3
+	media-sound/pulseaudio
+"
 RDEPEND="${DEPEND}"

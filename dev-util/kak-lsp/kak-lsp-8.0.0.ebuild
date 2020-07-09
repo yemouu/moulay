@@ -127,16 +127,14 @@ inherit cargo
 
 DESCRIPTION="Kakoune Language Server Protocol Client"
 HOMEPAGE="https://github.com/ul/kak-lsp"
-SRC_URI="https://github.com/ul/${PN}/archive/v${PV}.tar.gz
-	$(cargo_crate_uris $CRATES)"
+SRC_URI="
+	https://github.com/ul/${PN}/archive/v${PV}.tar.gz
+	$(cargo_crate_uris $CRATES)
+"
 
 LICENSE="Unlicense MIT"
 SLOT="0"
 KEYWORDS="~amd64"
-
-RDEPEND=""
-DEPEND="${RDEPEND}"
-BDEPEND=""
 
 src_install() {
 	insinto /usr/share/${PN}/examples

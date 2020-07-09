@@ -3,8 +3,8 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8} )
 DISTUTILS_USE_SETUPTOOLS=rdepend
+PYTHON_COMPAT=( python3_{6,7,8} )
 inherit distutils-r1 git-r3
 
 DESCRIPTION="Adds custom CSS support to Discord"
