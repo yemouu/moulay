@@ -1,7 +1,0 @@
---- a/Makefile
-+++ b/Makefile
-@@ -1,4 +1,4 @@
--PREFIX   := /usr/local
-+PREFIX   := /usr
- MANDIR   := ${PREFIX}/share/man/man1
- BINDIR   := ${PREFIX}/bin
