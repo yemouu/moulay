@@ -18,6 +18,7 @@ emaint sync -r moulay
 Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Project:GURU)
 
 ## List of Packages
+ - [app-editors/bed](https://github.com/yemouu/moulay/tree/master/app-editors/bed)
  - [app-misc/beautifuldiscord](https://github.com/yemouu/moulay/tree/master/app-misc/beautifuldiscord)
  - [app-misc/tiramisu](https://github.com/yemouu/moulay/tree/master/app-misc/tiramisu)
  - [app-misc/volctl](https://github.com/yemouu/moulay/tree/master/app-misc/volctl)

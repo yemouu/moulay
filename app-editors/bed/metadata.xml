@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+  <maintainer type="person">
+    <email>meeyou@tuta.io</email>
+  </maintainer>
+  <longdescription>
+    Line-based/modal visual editor. Navigate with the arrow keys and edit with vim-like bindings. Supports basic file editing and viewing (e.g. scrolling, paging up/down, line editing, deleting, saving/loading).
+  </longdescription>
+</pkgmetadata>
