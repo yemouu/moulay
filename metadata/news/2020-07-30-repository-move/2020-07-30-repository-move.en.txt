@@ -1,0 +1,12 @@
+Title: Repository move to the comfies github organization
+Author: yemou <meeyou@tuta.io>
+Posted: 2020-07-30
+Revision: 1
+News-Item-Format: 1.0
+
+This repository will be moving over to the comfies github organization.
+To migrate, you can either delete this repository and redownload it
+with `eselect repository` using the new url [1] or change the origin
+with git.
+
+[1] https://github.com/comfies/moulay
