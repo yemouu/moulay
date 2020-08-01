@@ -1,0 +1,13 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=media-libs/imlib2 xinerama? ( x11-libs/libXinerama )
+DESCRIPTION=Simple X background setter inspired by imlibsetroot and feh
+EAPI=7
+HOMEPAGE=https://github.com/ttzhou/setroot
+IUSE=xinerama
+LICENSE=GPL-3
+PROPERTIES=live
+RDEPEND=media-libs/imlib2 xinerama? ( x11-libs/libXinerama )
+SLOT=0
+_eclasses_=git-r3	8ec5b53812bce105ae7943930e4660f8
+_md5_=2f2984112db193de5721f6a144df3881
