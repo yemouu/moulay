@@ -13,7 +13,6 @@ EGIT_REPO_URI="https://github.com/leovoel/BeautifulDiscord"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 
 RDEPEND="dev-python/psutil[${PYTHON_USEDEP}]"
 DEPEND="${RDEPEND}"
