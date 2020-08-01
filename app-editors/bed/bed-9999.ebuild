@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/comfies/${PN}"
 
 LICENSE="Unlicense"
 SLOT="0"
-KEYWORDS=""
 
 src_install() {
 	dobin bed
