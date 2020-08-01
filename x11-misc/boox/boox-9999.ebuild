@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/BanchouBoo/boox"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 
 RDEPEND="
 	x11-libs/libxcb
