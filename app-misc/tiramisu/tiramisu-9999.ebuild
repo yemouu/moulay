@@ -11,7 +11,6 @@ EGIT_REPO_URI="https://github.com/Sweets/tiramisu"
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS=""
 
 RDEPEND="dev-libs/glib"
 DEPEND="${RDEPEND}"
