@@ -21,6 +21,7 @@ IUSE="voice"
 S="${WORKDIR}/${MY_P}"
 
 RDEPEND="
+	dev-libs/libffi
 	>=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
 	<dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
 	>=dev-python/websockets-6.0[${PYTHON_USEDEP}]
@@ -28,6 +29,6 @@ RDEPEND="
 	!~dev-python/websockets-8.0[${PYTHON_USEDEP}]
 	!~dev-python/websockets-8.0.1[${PYTHON_USEDEP}]
 	<dev-python/websockets-9.0[${PYTHON_USEDEP}]
-	voice? ( ~dev-python/pynacl-1.3.0[${PYTHON_USEDEP}] )
+	voice? ( dev-python/pynacl[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
