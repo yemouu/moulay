@@ -12,7 +12,7 @@ EGIT_REPO_URI="https://github.com/comfies/${PN}"
 LICENSE="Unlicense"
 SLOT="0"
 
-RDEPEND="app-shells/bash"
+RDEPEND="app-shells/bash:*"
 DEPEND="${RDEPEND}"
 
 src_install() {
