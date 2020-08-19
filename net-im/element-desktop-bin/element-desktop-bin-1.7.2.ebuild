@@ -5,9 +5,11 @@ EAPI=7
 
 inherit desktop unpacker xdg
 
+MY_PN="${PN%-bin}"
+
 DESCRIPTION=" A glossy Matrix collaboration client for desktop"
 HOMEPAGE="https://element.io/"
-SRC_URI="https://packages.riot.im/debian/pool/main/e/${PN}/${PN}_${PV}_amd64.deb"
+SRC_URI="https://packages.riot.im/debian/pool/main/e/${MY_PN}/${MY_PN}_${PV}_amd64.deb"
 
 LICENSE="Apache-2.0"
 SLOT="0"
@@ -42,8 +44,8 @@ S="${WORKDIR}"
 
 src_install() {
 	domenu usr/share/applications/*.desktop
-	gzip -d usr/share/doc/${PN}/changelog.gz
-	dodoc usr/share/doc/${PN}/changelog
+	gzip -d usr/share/doc/${MY_PN}/changelog.gz
+	dodoc usr/share/doc/${MY_PN}/changelog
 
 	for size in 16 24 48 64 96 128 256 512
 	do
@@ -52,13 +54,13 @@ src_install() {
 
 	mkdir usr/bin
 	cd usr/bin
-	ln -s ../../opt/Element/${PN} ./
+	ln -s ../../opt/Element/${MY_PN} ./
 	cd ../../
 
 	insinto /opt
 	doins -r opt/*
 	insinto /usr/bin
-	doins usr/bin/${PN}
+	doins usr/bin/${MY_PN}
 
-	fperms +x /opt/Element/${PN}
+	fperms +x /opt/Element/${MY_PN}
 }
