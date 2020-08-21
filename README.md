@@ -25,6 +25,5 @@ Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Proj
  - [gui-apps/wev](https://github.com/comfies/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/comfies/moulay/tree/master/gui-apps/wlr-randr)
  - [media-fonts/montserrat](https://github.com/comfies/moulay/tree/master/media-fonts/montserrat)
- - [net-im/element-desktop](https://github.com/comfies/moulay/tree/master/net-im/element-desktop)
  - [x11-misc/blugon](https://github.com/comfies/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/setroot](https://github.com/comfies/moulay/tree/master/x11-misc/setroot)
