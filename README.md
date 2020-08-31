@@ -12,9 +12,6 @@ eselect repository add moulay git https://github.com/comfies/moulay
 emaint sync -r moulay
 ```
 
-### Note
-Some dependencies come from the [GURU Overlay](https://wiki.gentoo.org/wiki/Project:GURU)
-
 ## List of Packages
  - [app-editors/bed](https://github.com/comfies/moulay/tree/master/app-editors/bed)
  - [app-misc/beautifuldiscord](https://github.com/comfies/moulay/tree/master/app-misc/beautifuldiscord)
