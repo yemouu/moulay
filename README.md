@@ -23,4 +23,5 @@ emaint sync -r moulay
  - [gui-apps/wlr-randr](https://github.com/comfies/moulay/tree/master/gui-apps/wlr-randr)
  - [media-fonts/montserrat](https://github.com/comfies/moulay/tree/master/media-fonts/montserrat)
  - [x11-misc/blugon](https://github.com/comfies/moulay/tree/master/x11-misc/blugon)
+ - [x11-misc/boox](https://github.com/comfies/moulay/tree/master/x11-misc/boox)
  - [x11-misc/setroot](https://github.com/comfies/moulay/tree/master/x11-misc/setroot)
