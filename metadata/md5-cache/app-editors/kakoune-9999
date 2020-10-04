@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install prepare test unpack
+DEPEND=sys-libs/ncurses:0=[unicode]
+DESCRIPTION=Modal editor inspired by vim
+EAPI=7
+HOMEPAGE=http://kakoune.org
+LICENSE=Unlicense
+PROPERTIES=live
+RDEPEND=sys-libs/ncurses:0=[unicode]
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_md5_=fc54c51559c51df2a68bd416746359d1
