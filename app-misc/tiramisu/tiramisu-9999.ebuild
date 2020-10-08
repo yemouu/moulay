@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit git-r3 savedconfig
+inherit git-r3
 
 DESCRIPTION="Desktop notifications, the UNIX way"
 HOMEPAGE="https://github.com/Sweets/tiramisu"
@@ -16,13 +16,7 @@ RDEPEND="dev-libs/glib"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
 
-src_prepare() {
-	default
-	restore_config config.h
-}
-
 src_install() {
 	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
 	einstalldocs
-	save_config config.h
 }
