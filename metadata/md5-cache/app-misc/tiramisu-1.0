@@ -1,12 +1,12 @@
-BDEPEND=virtual/pkgconfig >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install unpack
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install
 DEPEND=dev-libs/glib
 DESCRIPTION=Desktop notifications, the UNIX way
 EAPI=7
 HOMEPAGE=https://github.com/Sweets/tiramisu
+KEYWORDS=~amd64
 LICENSE=MIT
-PROPERTIES=live
 RDEPEND=dev-libs/glib
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+SRC_URI=https://github.com/Sweets/tiramisu/archive/1.0.tar.gz -> tiramisu-1.0.tar.gz
 _md5_=d9f9d13d636c93a0b9dbd6366a784e2c
