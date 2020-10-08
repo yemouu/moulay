@@ -19,6 +19,7 @@ emaint sync -r moulay
  - [app-misc/volctl](https://github.com/comfies/moulay/tree/master/app-misc/volctl)
  - [dev-python/discord-py](https://github.com/comfies/moulay/tree/master/dev-python/discord-py)
  - [dev-util/kak-lsp](https://github.com/comfies/moulay/tree/master/dev-util/kak-lsp)
+ - [gui-apps/wayvnc](https://github.com/comfies/moulay/tree/master/gui-apps/wayvnc)
  - [gui-apps/wev](https://github.com/comfies/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/comfies/moulay/tree/master/gui-apps/wlr-randr)
  - [media-fonts/montserrat](https://github.com/comfies/moulay/tree/master/media-fonts/montserrat)
