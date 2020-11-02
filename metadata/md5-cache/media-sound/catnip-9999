@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.12 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=media-libs/portaudio sci-libs/fftw:3.0
+DESCRIPTION=terminal audio visualizer
+EAPI=7
+HOMEPAGE=https://github.com/noriah/catnip
+LICENSE=MIT Unlicense BSD-2
+PROPERTIES=live
+RDEPEND=media-libs/portaudio sci-libs/fftw:3.0
+RESTRICT=strip
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	go-module	92660621959e7fab813173772987588b
+_md5_=1522d8f5395decb2179a4742c906caa5
