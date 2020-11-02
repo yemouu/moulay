@@ -25,6 +25,7 @@ emaint sync -r moulay
  - [gui-apps/wev](https://github.com/comfies/moulay/tree/master/gui-apps/wev)
  - [gui-apps/wlr-randr](https://github.com/comfies/moulay/tree/master/gui-apps/wlr-randr)
  - [media-fonts/montserrat](https://github.com/comfies/moulay/tree/master/media-fonts/montserrat)
+ - [media-sound/catnip](https://github.com/comfies/moulay/tree/master/media-sound/catnip)
  - [net-misc/neatvnc](https://github.com/comfies/moulay/tree/master/net-misc/neatvnc)
  - [x11-misc/blugon](https://github.com/comfies/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/boox](https://github.com/comfies/moulay/tree/master/x11-misc/boox)
