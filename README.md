@@ -1,5 +1,7 @@
 # moulay
-Gentoo Overlay with random packages.
+a gentoo repo
+packaging software not in
+offical repos
 
 ## How to use
 If you want to use this overlay, install `app-eselect/eselect-repository`, add the overlay and sync the repository.
