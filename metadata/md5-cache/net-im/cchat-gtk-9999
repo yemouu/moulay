@@ -1,0 +1,13 @@
+BDEPEND=>=dev-lang/go-1.12 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=app-text/gspell gui-libs/libhandy:1 x11-libs/gtk+:3
+DESCRIPTION=Gtk frontend for cchat
+EAPI=7
+HOMEPAGE=https://github.com/diamondburned/cchat-gtk
+LICENSE=Apache-2.0 BSD BSD-2 GPL-3 ISC LGPL-2 MIT
+PROPERTIES=live
+RDEPEND=app-text/gspell gui-libs/libhandy:1 x11-libs/gtk+:3
+RESTRICT=strip
+SLOT=0
+_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	go-module	92660621959e7fab813173772987588b
+_md5_=fd3d0e2ff3853d3aa2e94985f6764d99
