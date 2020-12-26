@@ -30,6 +30,7 @@ emaint sync -r moulay
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [media-fonts/montserrat](https://github.com/yemouu/moulay/tree/master/media-fonts/montserrat)
  - [media-sound/catnip](https://github.com/yemouu/moulay/tree/master/media-sound/catnip)
+ - [net-im/cchat-gtk](https://github.com/yemouu/moulay/tree/master/net-im/cchat-gtk)
  - [net-misc/neatvnc](https://github.com/yemouu/moulay/tree/master/net-misc/neatvnc)
  - [x11-misc/blugon](https://github.com/yemouu/moulay/tree/master/x11-misc/blugon)
  - [x11-misc/boox](https://github.com/yemouu/moulay/tree/master/x11-misc/boox)
