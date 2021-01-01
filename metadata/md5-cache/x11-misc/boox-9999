@@ -10,4 +10,4 @@ PROPERTIES=live
 RDEPEND=x11-libs/libxcb x11-libs/xcb-util-cursor
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	portability	b2e405b5a3f051d58b50c9ffc6b883cf	savedconfig	0bc45cb0429003c9abc73bae24a0d5bd
-_md5_=46b2faae39b5c0e4159ff3c9ce726d54
+_md5_=7d5a49d02a97ec225db258ffc284ee9b

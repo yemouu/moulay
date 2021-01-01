@@ -10,4 +10,4 @@ RDEPEND=media-libs/portaudio sci-libs/fftw:3.0
 RESTRICT=strip
 SLOT=0
 _eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	go-module	92660621959e7fab813173772987588b
-_md5_=1522d8f5395decb2179a4742c906caa5
+_md5_=ecd8b8564d9988f5e413e8bd248f21fb

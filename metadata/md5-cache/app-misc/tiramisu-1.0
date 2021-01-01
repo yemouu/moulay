@@ -9,4 +9,4 @@ LICENSE=MIT
 RDEPEND=dev-libs/glib
 SLOT=0
 SRC_URI=https://github.com/Sweets/tiramisu/archive/1.0.tar.gz -> tiramisu-1.0.tar.gz
-_md5_=d9f9d13d636c93a0b9dbd6366a784e2c
+_md5_=fae20e0b7172964bb262dc199f971e15
