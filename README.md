@@ -17,11 +17,13 @@ emaint sync -r moulay
 ```
 
 ## List of Packages
+
  - [app-editors/bed](https://github.com/yemouu/moulay/tree/master/app-editors/bed)
  - [app-misc/beautifuldiscord](https://github.com/yemouu/moulay/tree/master/app-misc/beautifuldiscord)
  - [app-misc/tiramisu](https://github.com/yemouu/moulay/tree/master/app-misc/tiramisu)
  - [app-misc/volctl](https://github.com/yemouu/moulay/tree/master/app-misc/volctl)
  - [dev-libs/aml](https://github.com/yemouu/moulay/tree/master/dev-libs/aml)
+ - [dev-libs/libexecinfo](https://github.com/yemouu/moulay/tree/master/dev-libs/libexecinfo)
  - [dev-python/discord-py](https://github.com/yemouu/moulay/tree/master/dev-python/discord-py)
  - [dev-util/kak-lsp](https://github.com/yemouu/moulay/tree/master/dev-util/kak-lsp)
  - [gui-apps/wayvnc](https://github.com/yemouu/moulay/tree/master/gui-apps/wayvnc)
