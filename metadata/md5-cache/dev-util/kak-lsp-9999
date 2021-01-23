@@ -2,10 +2,10 @@ BDEPEND=>=virtual/rust-1.37.0 >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install test unpack
 DESCRIPTION=Kakoune Language Server Protocol Client
 EAPI=7
-HOMEPAGE=https://github.com/ul/kak-lsp
+HOMEPAGE=https://github.com/kak-lsp/kak-lsp
 IUSE=debug
 LICENSE=Unlicense MIT
 PROPERTIES=live
 SLOT=0
 _eclasses_=cargo	7ffdd252643addc68abff0a08cca5306	git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	1a94dc06d324bd0dab754e11abe6d27e
-_md5_=c42a629ab19d02232cd966d37f139a1e
+_md5_=df145e54ab0dd5780dc67e6aa6d13bdd

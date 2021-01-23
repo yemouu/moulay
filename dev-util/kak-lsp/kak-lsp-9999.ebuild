@@ -9,14 +9,14 @@ CRATES="
 inherit cargo
 
 DESCRIPTION="Kakoune Language Server Protocol Client"
-HOMEPAGE="https://github.com/ul/kak-lsp"
+HOMEPAGE="https://github.com/kak-lsp/kak-lsp"
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/ul/${PN}"
+	EGIT_REPO_URI="https://github.com/kak-lsp/${PN}"
 else
 	SRC_URI="
-		https://github.com/ul/${PN}/archive/v${PV}.tar.gz
+		https://github.com/kak-lsp/${PN}/archive/v${PV}.tar.gz
 		$(cargo_crate_uris $CRATES)
 	"
 	KEYWORDS="~amd64"
