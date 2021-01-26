@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-  <maintainer type="person">
-    <email>meeyou@tuta.io</email>
-  </maintainer>
-  <longdescription>This is a liberally licensed VNC server library that's intended to be fast and neat.</longdescription>
-</pkgmetadata>
