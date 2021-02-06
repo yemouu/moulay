@@ -36,11 +36,7 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
-src_compile() {
-	go build || die
-}
-
 src_install() {
 	einstalldocs
-	dobin cchat-gtk
+	emake DESTDIR="${D}" PREFIX="${EPREFIX}/usr" install
 }
