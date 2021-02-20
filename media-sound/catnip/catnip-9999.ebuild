@@ -30,7 +30,7 @@ fi
 
 LICENSE="MIT Unlicense BSD-2"
 SLOT="0"
-IUSE="portaudio"
+IUSE="+portaudio"
 
 RDEPEND="
 	portaudio? ( media-libs/portaudio )
