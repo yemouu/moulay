@@ -30,15 +30,16 @@ fi
 
 LICENSE="MIT Unlicense BSD-2"
 SLOT="0"
+IUSE="portaudio"
 
 RDEPEND="
-	media-libs/portaudio
+	portaudio? ( media-libs/portaudio )
 	sci-libs/fftw:3.0
 "
 DEPEND="${RDEPEND}"
 
 src_compile() {
-	go build || die
+	go build $(usex portaudio "" "-tags noportaudio") || die
 }
 
 src_install() {
