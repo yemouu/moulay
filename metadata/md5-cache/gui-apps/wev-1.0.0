@@ -7,5 +7,5 @@ KEYWORDS=~amd64
 LICENSE=MIT
 RDEPEND=dev-libs/wayland x11-libs/libxkbcommon
 SLOT=0
-SRC_URI=https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz
-_md5_=4f98a5ee89be54f4f5881b413cd318e4
+SRC_URI=https://git.sr.ht/~sircmpwn/wev/archive/1.0.0.tar.gz -> wev-1.0.0.tar.gz
+_md5_=f47214f119ea71d9d0288fc22e2d24a9
