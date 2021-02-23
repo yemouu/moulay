@@ -10,7 +10,7 @@ then
 	inherit git-r3
 	EGIT_REPO_URI="https://git.sr.ht/~sircmpwn/wev"
 else
-	SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz"
+	SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
 fi
 

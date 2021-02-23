@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Tool for debugging events on a Wayland window"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/wev"
-SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="MIT"
 SLOT="0"
