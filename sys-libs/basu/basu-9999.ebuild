@@ -13,7 +13,7 @@ then
 	inherit git-r3
 else
 	SRC_URI="https://github.com/emersion/basu/releases/download/v${PV}/${P}.tar.gz"
-	KEYWORDS="~amd64"
+	KEYWORDS=""
 fi
 
 LICENSE="LGPL-2.1"
