@@ -1,0 +1,11 @@
+BDEPEND=>=virtual/rust-1.37.0 >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install test unpack
+DESCRIPTION=An implementation of the Language Server Protocol for LaTeX
+EAPI=7
+HOMEPAGE=https://texlab.netlify.app
+IUSE=debug
+LICENSE=GPL-3
+PROPERTIES=live
+SLOT=0
+_eclasses_=cargo	ee3fdb62142c867f137d4fab6f1ad34d	git-r3	3e7ec3d6619213460c85e2aa48398441	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_md5_=5e31de34d6999881834e1f829224d6a2
