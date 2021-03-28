@@ -1,13 +1,13 @@
-BDEPEND=app-text/scdoc dev-libs/tllist sys-libs/ncurses >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile configure install postinst postrm test unpack
+BDEPEND=app-text/scdoc dev-libs/tllist terminfo? ( sys-libs/ncurses ) pgo? ( dev-libs/weston[headless] ) >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm prepare test unpack
 DEPEND=dev-libs/fcft dev-libs/wayland dev-util/wayland-scanner media-libs/fontconfig media-libs/freetype x11-libs/libxkbcommon x11-libs/pixman
 DESCRIPTION=A fast, lightweight and minimalistic Wayland terminal emulator
 EAPI=7
 HOMEPAGE=https://codeberg.org/dnkl/foot
-IUSE=+ime
+IUSE=+ime lto pgo +terminfo
 LICENSE=MIT
 PROPERTIES=live
 RDEPEND=dev-libs/fcft dev-libs/wayland dev-util/wayland-scanner media-libs/fontconfig media-libs/freetype x11-libs/libxkbcommon x11-libs/pixman
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441	meson	e43eef9331f54965a573ed380854ff47	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	python-utils-r1	2dc8e06a3429719b43e9140f7292a425	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=82cc4862b7921bad3090c59ae4b89271
+_eclasses_=edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	flag-o-matic	09a8beb8e6a8e02dc1e1bd83ac353741	git-r3	3e7ec3d6619213460c85e2aa48398441	l10n	8cdd85e169b835d518bc2fd59f780d8e	meson	e43eef9331f54965a573ed380854ff47	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	python-utils-r1	543b53e4d003ebd889082f4673e52af5	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
+_md5_=c7c452b7362f2ddfe1d969129d6ce0d2
