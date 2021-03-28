@@ -6,5 +6,8 @@
   </maintainer>
   <use>
     <flag name="ime">Enables IME support</flag>
+    <flag name="lto">Build with link time optimization</flag>
+    <flag name="pgo">Build with full profile guided optimization</flag>
+    <flag name="terminfo">Build terminfo</flag>
   </use>
 </pkgmetadata>
