@@ -35,7 +35,7 @@ BDEPEND="
 	app-text/scdoc
 	dev-libs/tllist
 	terminfo? ( sys-libs/ncurses )
-	pgo? ( dev-libs/weston[headless] )
+	pgo? ( dev-libs/weston[desktop,headless] )
 "
 
 DOC=( "README.md" "CHANGELOG.md" "foot.ini" )
