@@ -8,5 +8,5 @@ LICENSE=Unlicense
 PROPERTIES=live
 RDEPEND=app-shells/bash:*
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=f14a9852c4a6368d2cde255b70c19e40
