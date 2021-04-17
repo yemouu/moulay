@@ -3,7 +3,7 @@
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{7,8} )
+PYTHON_COMPAT=( python3_{7,8,9} )
 inherit distutils-r1
 
 MY_PN="${PN/-/.}"
@@ -27,8 +27,7 @@ IUSE="voice"
 
 RDEPEND="
 	dev-libs/libffi
-	>=dev-python/aiohttp-3.6.0[${PYTHON_USEDEP}]
-	<dev-python/aiohttp-3.7.0[${PYTHON_USEDEP}]
+	<dev-python/aiohttp-3.8.0[${PYTHON_USEDEP}]
 	voice? ( dev-python/pynacl[${PYTHON_USEDEP}] )
 "
 DEPEND="${RDEPEND}"
