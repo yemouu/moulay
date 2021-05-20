@@ -1,13 +1,13 @@
 BDEPEND=>=virtual/rust-1.37.0 >=dev-util/meson-0.54.0 >=dev-util/ninja-1.8.2 dev-util/meson-format-array >=dev-vcs/git-1.8.2.1[curl]
 DEFINED_PHASES=compile configure install postinst postrm test unpack
-DEPEND=app-text/gspell dev-libs/glib || ( dev-libs/openssl dev-libs/libressl ) gui-libs/libhandy:1 media-libs/gst-plugins-bad media-libs/gst-plugins-base media-libs/gstreamer media-libs/gstreamer-editing-services sys-apps/dbus x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/gtksourceview:4
+DEPEND=app-text/gspell dev-libs/glib dev-libs/openssl gui-libs/libhandy:1 media-libs/gst-plugins-bad media-libs/gst-plugins-base media-libs/gstreamer media-libs/gstreamer-editing-services sys-apps/dbus x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/gtksourceview:4
 DESCRIPTION=Matrix messaging app for GNOME written in Rust
 EAPI=7
 HOMEPAGE=https://wiki.gnome.org/Apps/Fractal
 IUSE=debug
 LICENSE=GPL-3+
 PROPERTIES=live
-RDEPEND=app-text/gspell dev-libs/glib || ( dev-libs/openssl dev-libs/libressl ) gui-libs/libhandy:1 media-libs/gst-plugins-bad media-libs/gst-plugins-base media-libs/gstreamer media-libs/gstreamer-editing-services sys-apps/dbus x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/gtksourceview:4
+RDEPEND=app-text/gspell dev-libs/glib dev-libs/openssl gui-libs/libhandy:1 media-libs/gst-plugins-bad media-libs/gst-plugins-base media-libs/gstreamer media-libs/gstreamer-editing-services sys-apps/dbus x11-libs/cairo x11-libs/gdk-pixbuf x11-libs/gtk+:3 x11-libs/gtksourceview:4
 SLOT=0
 _eclasses_=cargo	7a8c7ca59987a0dfb53f3c68656d2c3c	edos2unix	33e347e171066657f91f8b0c72ec8773	eutils	2d5b3f4b315094768576b6799e4f926e	git-r3	b8e8c92aa5fe8df7187e466138eb4e52	gnome2-utils	c8e3fff820d850c0e003e22208d2eea3	l10n	8cdd85e169b835d518bc2fd59f780d8e	meson	00d6fba6e500964c50ba74d1d1fc2e6c	multilib	d410501a125f99ffb560b0c523cd3d1e	multiprocessing	cac3169468f893670dac3e7cb940e045	ninja-utils	132cbb376048d079b5a012f5467c4e7f	python-utils-r1	d273d56dc725880edbeb1f6389faf5f1	toolchain-funcs	24921b57d6561d87cbef4916a296ada4	wrapper	4251d4c84c25f59094fd557e0063a974	xdg-utils	ff2ff954e6b17929574eee4efc5152ba
-_md5_=a65ed52cb6eaeb47a8ea47bd71efc75f
+_md5_=008e9184827c7756bfbdd56a887ed916
