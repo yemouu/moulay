@@ -31,6 +31,7 @@ emaint sync -r moulay
  - [gui-apps/wlr-randr](https://github.com/yemouu/moulay/tree/master/gui-apps/wlr-randr)
  - [gui-apps/wlsunset](https://github.com/yemouu/moulay/tree/master/gui-apps/wlsunset)
  - [media-fonts/montserrat](https://github.com/yemouu/moulay/tree/master/media-fonts/montserrat)
+ - [media-sound/carla](https://github.com/yemouu/moulay/tree/master/media-sound/carla)
  - [media-sound/catnip](https://github.com/yemouu/moulay/tree/master/media-sound/catnip)
  - [media-sound/myxer](https://github.com/yemouu/moulay/tree/master/media-sound/myxer)
  - [media-sound/volctl](https://github.com/yemouu/moulay/tree/master/media-sound/volctl)
