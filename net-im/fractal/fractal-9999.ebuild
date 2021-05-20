@@ -29,7 +29,7 @@ SLOT="0"
 RDEPEND="
 	app-text/gspell
 	dev-libs/glib
-	|| ( dev-libs/openssl dev-libs/libressl )
+	dev-libs/openssl
 	gui-libs/libhandy:1
 	media-libs/gst-plugins-bad
 	media-libs/gst-plugins-base
