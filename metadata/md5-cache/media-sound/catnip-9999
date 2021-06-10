@@ -10,5 +10,5 @@ PROPERTIES=live
 RDEPEND=portaudio? ( media-libs/portaudio ) sci-libs/fftw:3.0
 RESTRICT=strip
 SLOT=0
-_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	go-module	92660621959e7fab813173772987588b
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52	go-module	bf028003684a8b018e4de9e3c272ed33
 _md5_=721a36db5a8ddb82b4b18c75df4513b0
