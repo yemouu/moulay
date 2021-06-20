@@ -52,7 +52,7 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 src_prepare() {
-	sed -i "s|exec \$PYTHON|exec ${PYTHON}|" \
+	sed -i -e "3s|=.*|=${PYTHON}|; 4,7d" \
 		data/carla \
 		data/carla-bridge-lv2-modgui \
 		data/carla-control \
