@@ -5,6 +5,7 @@
     <email>meeyou@tuta.io</email>
   </maintainer>
   <use>
+    <flag name="grapheme-clustering">Enables grapheme clustering</flag>
     <flag name="ime">Enables IME support</flag>
     <flag name="lto">Build with link time optimization</flag>
     <flag name="pgo">Build with full profile guided optimization</flag>
