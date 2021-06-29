@@ -23,13 +23,16 @@ SLOT="0"
 IUSE="+text-shaping"
 
 RDEPEND="
-	dev-libs/tllist
 	media-libs/fontconfig
 	media-libs/freetype
 	text-shaping? ( media-libs/harfbuzz )
 	x11-libs/pixman
 "
 DEPEND="${RDEPEND}"
+BDEPEND="
+	app-text/scdoc
+	dev-libs/tllist
+"
 
 DOCS=( "README.md" "CHANGELOG.md" )
 PATCHES=( "${FILESDIR}/gentoo-fhs.patch" )
