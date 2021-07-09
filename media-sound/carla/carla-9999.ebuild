@@ -40,7 +40,10 @@ RDEPEND="
 	alsa? ( media-libs/alsa-lib )
 	gtk2? ( x11-libs/gtk+:2 )
 	gtk? ( x11-libs/gtk+:3 )
-	osc? ( media-libs/liblo )
+	osc? (
+		dev-python/pyliblo
+		media-libs/liblo
+	)
 	pulseaudio? ( media-sound/pulseaudio )
 	qt5? ( $(python_gen_cond_dep 'dev-python/PyQt5[gui,svg,widgets,${PYTHON_USEDEP}]') )
 	rdf? ( dev-python/rdflib )
