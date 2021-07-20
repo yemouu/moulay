@@ -41,7 +41,7 @@ RDEPEND="
 	gtk2? ( x11-libs/gtk+:2 )
 	gtk? ( x11-libs/gtk+:3 )
 	osc? (
-		dev-python/pyliblo
+		$(python_gen_cond_dep 'dev-python/pyliblo[${PYTHON_USEDEP}]')
 		media-libs/liblo
 	)
 	pulseaudio? ( media-sound/pulseaudio )
