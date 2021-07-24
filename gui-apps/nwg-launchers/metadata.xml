@@ -8,5 +8,6 @@
     <flag name="bar">Build the bar app</flag>
     <flag name="dmenu">Build the dmenu app</flag>
     <flag name="grid">Build the grid app</flag>
+    <flag name="layer-shell">Enable gtk-layer-shell support</flag>
   </use>
 </pkgmetadata>
