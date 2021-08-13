@@ -1,0 +1,2 @@
+sys-devel/gcc-config -cc-wrappers -native-symlinks
+sys-devel/binutils-config -native-symlinks

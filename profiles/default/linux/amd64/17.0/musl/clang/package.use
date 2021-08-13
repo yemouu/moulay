@@ -1,0 +1,2 @@
+# Fails to compile with these options enabled
+sys-libs/compiler-rt-sanitizers -libfuzzer -gwp-asan -hwasan

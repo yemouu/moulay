@@ -1,0 +1,26 @@
+# This is a list from toolchain-funcs.eclass in ::gentoo
+AR="llvm-ar"
+# llvm-as only deals with LLVM assembly
+# AS="llvm-as"
+CC="$CHOST-clang"
+CPP="$CHOST-clang-cpp"
+CXX="$CHOST-clang++"
+LD="ld.lld"
+STRINGS="llvm-strings"
+STRIP="llvm-strip"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+READELF="llvm-readelf"
+OBJCOPY="llvm-objcopy"
+OBJDUMP="llvm-objdump"
+# flang is not yet packaged
+# F77
+# FC
+# These probably won't be set by us
+# GCJ
+# GO
+# PKG_CONFIG
+# RC
+# DLLWRAP
+
+USE="clang libcxx llvm-libunwind"

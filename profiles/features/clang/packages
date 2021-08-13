@@ -1,0 +1,4 @@
+# Clang will be used as the main system compiler
+*sys-devel/clang
+-*sys-devel/gcc
+-*sys-devel/binutils
