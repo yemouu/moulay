@@ -17,7 +17,7 @@ then
 	EGIT_REPO_URI="https://github.com/Aurailus/${PN}"
 else
 	SRC_URI="
-		https://github.com/Aurailus/${PN}/archive/refs/tags/${PV}.tar.gz
+		https://github.com/Aurailus/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
 		$(cargo_crate_uris $CRATES)
 	"
 	KEYWORDS="~amd64"
