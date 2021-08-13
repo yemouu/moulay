@@ -1,0 +1,12 @@
+BDEPEND=virtual/pkgconfig
+DEFINED_PHASES=install
+DEPEND=dev-libs/glib
+DESCRIPTION=Desktop notifications, the UNIX way
+EAPI=7
+HOMEPAGE=https://github.com/Sweets/tiramisu
+KEYWORDS=~amd64
+LICENSE=MIT
+RDEPEND=dev-libs/glib
+SLOT=0
+SRC_URI=https://github.com/Sweets/tiramisu/archive/v2.0alpha.tar.gz -> tiramisu-2.0_alpha.tar.gz
+_md5_=0c6aa008f8166d8274377e1028c7a30a
