@@ -11,12 +11,12 @@ If you want to use this overlay, install `app-eselect/eselect-repository`, add t
 ```
 emerge -a app-eselect/eselect-repository
 
-eselect repository add moulay git https://github.com/yemouu/moulay
+eselect repository add moulay git https://gitlab.com/yemou/moulay
 
 emaint sync -r moulay
 ```
 
-Note: This repo is also available on GitLab. You can use the GitLab link at `https://gitlab.com/yemou/moulay` if you
+Note: This repo is also available on GitHub. You can use the GitHub link at `https://github.com/yemouu/moulay` if you
 prefer.
 
 ## List of Packages
