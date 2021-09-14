@@ -7,7 +7,7 @@ inherit git-r3
 
 DESCRIPTION="Bash only text editor"
 HOMEPAGE="https://github.com/trvv/bed"
-EGIT_REPO_URI="https://github.com/trvv/${PN}"
+EGIT_REPO_URI="https://github.com/comfies/${PN}"
 
 LICENSE="Unlicense"
 SLOT="0"
