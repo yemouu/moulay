@@ -1,5 +1,5 @@
 BDEPEND=>=dev-lang/go-1.12 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install postinst unpack
+DEFINED_PHASES=compile install unpack
 DEPEND=dev-libs/glib gui-libs/gtk-layer-shell gui-libs/libhandy:1 media-libs/portaudio sci-libs/fftw x11-libs/gtk+:3
 DESCRIPTION=catnip gtk frontend
 EAPI=8
@@ -9,5 +9,5 @@ PROPERTIES=live
 RDEPEND=dev-libs/glib gui-libs/gtk-layer-shell gui-libs/libhandy:1 media-libs/portaudio sci-libs/fftw x11-libs/gtk+:3
 RESTRICT=strip
 SLOT=0
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	go-module	8aabf8812bab7a6f07e7a32958c505ef
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	go-module	66ced1f8651b6b35c0262d39e015fe24
 _md5_=08a2f4951e6add375abd96fd563ec942

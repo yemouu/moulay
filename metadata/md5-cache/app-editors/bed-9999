@@ -9,4 +9,4 @@ PROPERTIES=live
 RDEPEND=app-shells/bash:*
 SLOT=0
 _eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
-_md5_=119d56fc7801a5ee768f865a347ea743
+_md5_=dafadf225006ee73674a27e4105c77e6

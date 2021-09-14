@@ -1,5 +1,5 @@
 BDEPEND=>=dev-lang/go-1.12 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=install postinst unpack
+DEFINED_PHASES=install unpack
 DEPEND=app-text/gspell gui-libs/libhandy:1 x11-libs/gtk+:3
 DESCRIPTION=Gtk frontend for cchat
 EAPI=7
@@ -9,5 +9,5 @@ PROPERTIES=live
 RDEPEND=app-text/gspell gui-libs/libhandy:1 x11-libs/gtk+:3
 RESTRICT=strip
 SLOT=0
-_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	go-module	8aabf8812bab7a6f07e7a32958c505ef
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da	go-module	66ced1f8651b6b35c0262d39e015fe24
 _md5_=c5c791d03766ea9b5e301b43a9f86b07
