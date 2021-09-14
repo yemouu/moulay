@@ -16,7 +16,7 @@ then
 	EGIT_REPO_URI="https://github.com/kak-lsp/${PN}"
 else
 	SRC_URI="
-		https://github.com/kak-lsp/${PN}/archive/v${PV}.tar.gz
+		https://github.com/kak-lsp/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
 		$(cargo_crate_uris $CRATES)
 	"
 	KEYWORDS="~amd64"
