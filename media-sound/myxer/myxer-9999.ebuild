@@ -33,6 +33,8 @@ RDEPEND="
 "
 DEPEND="${RDEPEND}"
 
+PATCHES=( "${FILESDIR}/gio-version.patch" )
+
 src_unpack() {
 	if [[ ${PV} == 9999 ]]
 	then

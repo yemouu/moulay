@@ -89,7 +89,7 @@ else
 		https://github.com/Aurailus/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
 		$(cargo_crate_uris $CRATES)
 	"
-	KEYWORDS=""
+	KEYWORDS="~amd64"
 	S="${WORKDIR}/${P/m/M}"
 fi
 
@@ -101,6 +101,8 @@ RDEPEND="
 	x11-libs/gtk+:3
 "
 DEPEND="${RDEPEND}"
+
+PATCHES=( "${FILESDIR}/gio-version.patch" )
 
 src_unpack() {
 	if [[ ${PV} == 9999 ]]
