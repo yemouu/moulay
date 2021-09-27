@@ -72,7 +72,7 @@ src_configure() {
 		$(meson_feature terminfo)
 		$(meson_feature grapheme-clustering)
 		$(meson_use lto b_lto)
-		-Dcustom-terminfo-install-location=no
+		-Dcustom-terminfo-install-location=share/terminfo
 	)
 	meson_src_configure
 
