@@ -7,6 +7,11 @@ EAPI=7
 VALA_USE_DEPEND=vapigen
 inherit meson vala
 
+MY_P=${P//_/.}
+MY_P=${MY_P/rc/}
+MY_PV=${PV//_/.}
+MY_PV=${MY_PV/rc/}
+
 DESCRIPTION="Building blocks for modern GNOME applications"
 HOMEPAGE="https://gitlab.gnome.org/GNOME/libadwaita"
 
@@ -15,9 +20,9 @@ then
 	inherit git-r3
 	EGIT_REPO_URI="https://gitlab.gnome.org/GNOME/libadwaita"
 else
-	SRC_URI="https://gitlab.gnome.org/GNOME/${PN}/-/archive/${PV/_/.}.3/${P/_/.}.3.tar.gz"
+	SRC_URI="https://gitlab.gnome.org/GNOME/${PN}/-/archive/${MY_PV}/${MY_P}.tar.gz"
 	KEYWORDS="~amd64"
-	S="${WORKDIR}/${P/_/.}.3"
+	S="${WORKDIR}/${MY_P}"
 fi
 
 LICENSE="LGPL-2.1"
