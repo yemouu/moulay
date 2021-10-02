@@ -1,0 +1,14 @@
+BDEPEND=>=dev-lang/go-1.12 app-arch/unzip >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile install unpack
+DEPEND=dev-libs/glib dev-libs/gobject-introspection gui-libs/gtk:4[introspection] gui-libs/libadwaita media-libs/graphene[introspection] x11-libs/gdk-pixbuf[introspection]
+DESCRIPTION=Matrix client in Go and GTK4
+EAPI=8
+HOMEPAGE=https://github.com/diamondburned/gotktrix
+INHERIT=go-module git-r3
+LICENSE=AGPL-3
+PROPERTIES=live
+RDEPEND=dev-libs/glib dev-libs/gobject-introspection gui-libs/gtk:4[introspection] gui-libs/libadwaita media-libs/graphene[introspection] x11-libs/gdk-pixbuf[introspection]
+RESTRICT=strip
+SLOT=0
+_eclasses_=go-module	34c2d0a98b291ac9acda0cb54c9ffd61	git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=ac68cc026ba3e6087382caf8c4291378
