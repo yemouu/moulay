@@ -1,0 +1,50 @@
+# Copyright 1999-2021 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+EAPI=8
+
+inherit go-module
+
+DESCRIPTION="Matrix client in Go and GTK4"
+HOMEPAGE="https://github.com/diamondburned/gotktrix"
+
+if [[ ${PV} == 9999 ]]
+then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/diamondburned/${PN}"
+
+	src_unpack() {
+		git-r3_src_unpack
+		go-module_live_vendor
+	}
+else
+	EGO_SUM=(
+	)
+	go-module_set_globals
+
+	SRC_URI="https://github.com/diamondburned/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+		${EGO_SUM_SRC_URI}"
+	KEYWORDS="~amd64"
+fi
+
+LICENSE="AGPL-3"
+SLOT="0"
+
+RDEPEND="
+	dev-libs/glib
+	dev-libs/gobject-introspection
+	gui-libs/gtk:4[introspection]
+	gui-libs/libadwaita
+	media-libs/graphene[introspection]
+	x11-libs/gdk-pixbuf[introspection]
+"
+DEPEND="${RDEPEND}"
+
+src_compile() {
+	go build ./cmd/gotktrix || die
+}
+
+src_install() {
+	einstalldocs
+	dobin gotktrix
+}
