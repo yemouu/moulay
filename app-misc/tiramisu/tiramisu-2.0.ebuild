@@ -24,6 +24,8 @@ RDEPEND="dev-libs/glib"
 DEPEND="${RDEPEND}"
 BDEPEND="virtual/pkgconfig"
 
+PATCHES=( "${FILESDIR}/${P}-Makefile.patch" )
+
 src_prepare() {
 	default
 	vala_src_prepare
