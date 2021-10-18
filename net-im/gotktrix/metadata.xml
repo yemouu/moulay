@@ -4,4 +4,7 @@
 	<maintainer type="person">
 		<email>meeyou@tuta.io</email>
 	</maintainer>
+	<use>
+		<flag name="secrets">Install a Secret Service API provider for remembering login details</flag>
+	</use>
 </pkgmetadata>

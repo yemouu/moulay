@@ -29,6 +29,7 @@ fi
 
 LICENSE="AGPL-3"
 SLOT="0"
+IUSE="+secrets"
 
 RDEPEND="
 	dev-libs/glib
@@ -36,11 +37,13 @@ RDEPEND="
 	gui-libs/gtk:4[introspection]
 	gui-libs/libadwaita
 	media-libs/graphene[introspection]
+	secrets? ( virtual/secret-service )
 	x11-libs/gdk-pixbuf[introspection]
 "
 DEPEND="${RDEPEND}"
 
 src_compile() {
+	use elibc_musl && export CGO_LDFLAGS="${CGO_LDFLAGS} -Wl,-z,stack-size=2097152"
 	go build ./cmd/gotktrix || die
 }
 
