@@ -1,0 +1,11 @@
+BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=install prepare unpack
+DESCRIPTION=Utility to control symlinks for cc, c++, and friends
+EAPI=8
+HOMEPAGE=https://gitlab.com/yemou/cc-config
+INHERIT=git-r3
+LICENSE=Unlicense
+PROPERTIES=live
+SLOT=0
+_eclasses_=git-r3	cc875b0c1e9b3bdac1af0f82f3ba29da
+_md5_=27e1e1ccc8e34401e4a5df34c2ff1f2a
