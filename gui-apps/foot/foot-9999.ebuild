@@ -19,7 +19,7 @@ fi
 
 LICENSE="MIT"
 SLOT="0"
-IUSE="+grapheme-clustering +ime lto pgo +terminfo"
+IUSE="+grapheme-clustering +ime lto pgo"
 
 RDEPEND="
 	dev-libs/fcft
@@ -27,6 +27,7 @@ RDEPEND="
 	dev-util/wayland-scanner
 	media-libs/fontconfig
 	media-libs/freetype
+	sys-libs/ncurses
 	x11-libs/libxkbcommon
 	x11-libs/pixman
 "
@@ -37,7 +38,6 @@ BDEPEND="
 	dev-libs/tllist
 	dev-libs/wayland-protocols
 	pgo? ( dev-libs/weston[desktop,headless] )
-	terminfo? ( sys-libs/ncurses )
 "
 
 DOC=( "README.md" "CHANGELOG.md" "foot.ini" )
@@ -66,10 +66,8 @@ src_prepare() {
 src_configure() {
 	use pgo && tc-is-clang && append-cflags -Wno-ignored-optimization-argument
 
-	# The next release of ncurses will provide foot's terminfo
 	local emesonargs=(
 		$(meson_use ime)
-		$(meson_feature terminfo)
 		$(meson_feature grapheme-clustering)
 		$(meson_use lto b_lto)
 	)
