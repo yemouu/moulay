@@ -67,6 +67,7 @@ src_configure() {
 	use pgo && tc-is-clang && append-cflags -Wno-ignored-optimization-argument
 
 	local emesonargs=(
+		-Dterminfo=disabled
 		$(meson_use ime)
 		$(meson_feature grapheme-clustering)
 		$(meson_use lto b_lto)
