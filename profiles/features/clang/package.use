@@ -1,4 +1,4 @@
 # These are needed for a full clang install (no gcc)
 sys-devel/clang default-compiler-rt default-libcxx default-lld
-sys-devel/clang-runtime compiler-rt
-sys-libs/libcxx libcxxabi
+#sys-devel/clang-runtime compiler-rt
+#sys-libs/libcxx libcxxabi
