@@ -1,0 +1,15 @@
+BDEPEND=dev-util/wayland-scanner >=dev-util/meson-0.58.2-r1 >=dev-util/ninja-1.8.2 dev-util/meson-format-array
+DEFINED_PHASES=compile configure install prepare test
+DEPEND=dev-libs/stb dev-libs/wayland dev-libs/wayland-protocols dev-util/glslang dev-util/vulkan-headers media-libs/libsdl2 media-libs/vulkan-loader screencast? ( media-video/pipewire ) sys-libs/libcap x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXres x11-libs/libXtst x11-libs/libXxf86vm x11-libs/libdrm x11-libs/libxkbcommon >=dev-libs/libinput-1.14.0:0= media-libs/mesa[egl(+),gles2,gbm(+)] sys-auth/seatd:= virtual/libudev x11-libs/pixman x11-base/xwayland x11-libs/libxcb:0= x11-libs/xcb-util-image x11-libs/xcb-util-wm
+DESCRIPTION=The micro-compositor formerly known as steamcompmgr
+EAPI=8
+HOMEPAGE=https://github.com/Plagman/gamescope
+INHERIT=meson
+IUSE=+screencast
+KEYWORDS=~amd64
+LICENSE=BSD-2
+RDEPEND=dev-libs/stb dev-libs/wayland dev-libs/wayland-protocols dev-util/glslang dev-util/vulkan-headers media-libs/libsdl2 media-libs/vulkan-loader screencast? ( media-video/pipewire ) sys-libs/libcap x11-libs/libX11 x11-libs/libXcomposite x11-libs/libXdamage x11-libs/libXext x11-libs/libXfixes x11-libs/libXrender x11-libs/libXres x11-libs/libXtst x11-libs/libXxf86vm x11-libs/libdrm x11-libs/libxkbcommon >=dev-libs/libinput-1.14.0:0= media-libs/mesa[egl(+),gles2,gbm(+)] sys-auth/seatd:= virtual/libudev x11-libs/pixman x11-base/xwayland x11-libs/libxcb:0= x11-libs/xcb-util-image x11-libs/xcb-util-wm
+SLOT=0
+SRC_URI=https://github.com/Plagman/gamescope/archive/refs/tags/3.9.5.tar.gz -> gamescope-3.9.5.tar.gz https://github.com/emersion/libliftoff/archive/b7a6958bcacdedf6e451d8821c807299943ef150.tar.gz -> libliftoff-b7a6958bcacdedf6e451d8821c807299943ef150.tar.gz https://github.com/swaywm/wlroots/archive/9579d62a160821a107763325a515d3aee0a1e158.tar.gz -> wlroots-9579d62a160821a107763325a515d3aee0a1e158.tar.gz
+_eclasses_=multiprocessing	61c959fc55c15c00bbb1079d6a71370b	ninja-utils	a4dab848a4490e8e48cf0baab3e61bc2	toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	4b66d835ec72e021e359bb81eacfe988	python-utils-r1	a8b7938ade305f087865de7e52d079b5	meson	9f3e84959ae1d60e19bc91f212774dcc
+_md5_=f5d699b2296b1618069ffbe50b212f06
