@@ -35,7 +35,6 @@ RDEPEND="
 	dev-libs/glib
 	dev-libs/gobject-introspection
 	gui-libs/gtk:4[introspection]
-	gui-libs/libadwaita
 	media-libs/graphene[introspection]
 	secrets? ( virtual/secret-service )
 	x11-libs/gdk-pixbuf[introspection]
@@ -44,7 +43,7 @@ DEPEND="${RDEPEND}"
 
 src_compile() {
 	use elibc_musl && export CGO_LDFLAGS="${CGO_LDFLAGS} -Wl,-z,stack-size=2097152"
-	go build ./cmd/gotktrix || die
+	go build || die
 }
 
 src_install() {
