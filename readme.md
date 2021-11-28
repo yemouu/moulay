@@ -5,22 +5,27 @@ packaging software not in
 
 offical repos
 
-## How to use
-If you want to use this overlay, install `app-eselect/eselect-repository`, add the overlay and sync the repository.
+## how to use
+If you want to use this overlay, install `app-eselect/eselect-repository`, add the overlay and sync
+the repository.
 
 ```
-emerge -a app-eselect/eselect-repository
+emerge -an app-eselect/eselect-repository
 
-eselect repository add moulay git https://gitlab.com/yemou/moulay
+eselect repository enable moulay
 
 emaint sync -r moulay
 ```
 
-Note: This repo is also available on GitHub. You can use the GitHub link at `https://github.com/yemouu/moulay` if you
-prefer.
+This overlay is available on [GitLab](https://gitlab.com/yemou/moulay) and
+[GitHub](https://github.com/yemouu/moulay).
 
-## List of Packages
+## reporting issues
+Issues can be reported on [GitLab](https://gitlab.com/yemou/moulay/-/issues) or on the Gentoo
+Bugzilla according to the instructions on the
+[wiki](https://wiki.gentoo.org/wiki/Project:Overlays/Overlays_guide#Reporting_bugs_on_repositories).
 
+## list of packages
   - [app-editors/bed](app-editors/bed)
   - [app-editors/helix](app-editors/helix)
   - [app-misc/tiramisu](app-misc/tiramisu)
