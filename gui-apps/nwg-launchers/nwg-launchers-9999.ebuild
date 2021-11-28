@@ -7,6 +7,7 @@ inherit meson
 
 DESCRIPTION="GTK-based launchers for sway and other window managers"
 HOMEPAGE="https://github.com/nwg-piotr/nwg-launchers"
+
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3

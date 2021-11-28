@@ -8,11 +8,18 @@ inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X"
 HOMEPAGE="https://github.com/jumper149/blugon"
-SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+if [[ ${PV} == 9999 ]]
+then
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/jumper149/blugon"
+else
+	SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~amd64"
 IUSE="xgamma"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 

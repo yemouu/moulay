@@ -129,10 +129,16 @@ inherit cargo
 
 DESCRIPTION="Kakoune Language Server Protocol Client"
 HOMEPAGE="https://github.com/kak-lsp/kak-lsp"
+
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/kak-lsp/${PN}"
+
+	src_unpack() {
+		git-r3_src_unpack
+		cargo_live_src_unpack
+	}
 else
 	SRC_URI="
 		https://github.com/kak-lsp/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
@@ -143,16 +149,6 @@ fi
 
 LICENSE="Unlicense MIT"
 SLOT="0"
-
-src_unpack() {
-	if [[ ${PV} == 9999 ]]
-	then
-		git-r3_src_unpack
-		cargo_live_src_unpack
-	else
-		cargo_src_unpack
-	fi
-}
 
 src_install() {
 	insinto /usr/share/${PN}/examples

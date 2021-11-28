@@ -7,6 +7,7 @@ inherit meson
 
 DESCRIPTION="An xrandr clone for wlroots compositors"
 HOMEPAGE="https://github.com/emersion/wlr-randr"
+
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3

@@ -23,8 +23,10 @@ else
 
 	go-module_set_globals
 
-	SRC_URI="https://github.com/noriah/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
-		${EGO_SUM_SRC_URI}"
+	SRC_URI="
+		https://github.com/noriah/${PN}/archive/v${PV}.tar.gz -> ${P}.tar.gz
+		${EGO_SUM_SRC_URI}
+	"
 	KEYWORDS="~amd64"
 fi
 

@@ -20,10 +20,13 @@ then
 else
 	EGO_SUM=(
 	)
+
 	go-module_set_globals
 
-	SRC_URI="https://github.com/diamondburned/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
-		${EGO_SUM_SRC_URI}"
+	SRC_URI="
+		https://github.com/diamondburned/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+		${EGO_SUM_SRC_URI}
+	"
 	KEYWORDS="~amd64"
 fi
 

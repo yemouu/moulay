@@ -5,6 +5,7 @@ EAPI=7
 
 DESCRIPTION="Tool for debugging events on a Wayland window"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/wev"
+
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3

@@ -8,12 +8,13 @@ inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X"
 HOMEPAGE="https://github.com/jumper149/blugon"
+
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/jumper149/blugon"
 else
-	SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz"
+	SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
 fi
 
@@ -28,6 +29,6 @@ RDEPEND="
 	x11-libs/libXrandr
 	xgamma? ( x11-apps/xgamma )
 "
-DEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 
 PATCHES=( ${FILESDIR}/${PN}-no-manpage-compression.patch )

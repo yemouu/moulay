@@ -5,11 +5,18 @@ EAPI=7
 
 DESCRIPTION="Tool for debugging events on a Wayland window"
 HOMEPAGE="https://git.sr.ht/~sircmpwn/wev"
-SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+
+if [[ ${PV} == 9999 ]]
+then
+	inherit git-r3
+	EGIT_REPO_URI="https://git.sr.ht/~sircmpwn/wev"
+else
+	SRC_URI="https://git.sr.ht/~sircmpwn/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
+	KEYWORDS="~amd64"
+fi
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
 
 RDEPEND="
 	dev-libs/wayland

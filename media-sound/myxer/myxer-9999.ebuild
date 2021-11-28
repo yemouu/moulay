@@ -15,6 +15,11 @@ if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3
 	EGIT_REPO_URI="https://github.com/Aurailus/${PN}"
+
+	src_unpack() {
+		git-r3_src_unpack
+		cargo_live_src_unpack
+	}
 else
 	SRC_URI="
 		https://github.com/Aurailus/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
@@ -34,13 +39,3 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 PATCHES=( "${FILESDIR}/gio-version.patch" )
-
-src_unpack() {
-	if [[ ${PV} == 9999 ]]
-	then
-		git-r3_src_unpack
-		cargo_live_src_unpack
-	else
-		cargo_src_unpack
-	fi
-}

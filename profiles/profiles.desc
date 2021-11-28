@@ -10,7 +10,7 @@
 #arch	profile_directory			status
 
 # musl profiles
-# @MAINTAINER: meeyou@tuta.io
+# @MAINTAINER: yemou@tuta.io
 amd64	default/linux/amd64/17.0/musl/clang	exp
 
 # vim: set ts=8 noet ft=conf:

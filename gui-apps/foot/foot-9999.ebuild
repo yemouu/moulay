@@ -7,6 +7,7 @@ inherit flag-o-matic meson ninja-utils toolchain-funcs xdg
 
 DESCRIPTION="A fast, lightweight and minimalistic Wayland terminal emulator"
 HOMEPAGE="https://codeberg.org/dnkl/foot"
+
 if [[ ${PV} == 9999 ]]
 then
 	EGIT_REPO_URI="https://codeberg.org/dnkl/foot"
