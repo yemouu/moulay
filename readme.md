@@ -22,6 +22,7 @@ prefer.
 ## List of Packages
 
   - [app-editors/bed](app-editors/bed)
+  - [app-editors/helix](app-editors/helix)
   - [app-misc/tiramisu](app-misc/tiramisu)
   - [dev-libs/fcft](dev-libs/fcft)
   - [dev-libs/libexecinfo](dev-libs/libexecinfo)
@@ -36,6 +37,8 @@ prefer.
   - [gui-apps/wlr-randr](gui-apps/wlr-randr)
   - [gui-apps/wlsunset](gui-apps/wlsunset)
   - [gui-libs/libadwaita](gui-libs/libadwaita)
+  - [gui-wm/cage](gui-wm/cage)
+  - [gui-wm/gamescope](gui-wm/gamescope)
   - [media-fonts/montserrat](media-fonts/montserrat)
   - [media-sound/carla](media-sound/carla)
   - [media-sound/catnip](media-sound/catnip)
