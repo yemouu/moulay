@@ -147,40 +147,40 @@ then
 	}
 else
 	SUBMODULES="
-		github.com/tree-sitter/tree-sitter-agda:ca69cdf485e9ce2b2ef0991a720aa88d87d30231
-		github.com/tree-sitter/tree-sitter-bash:a8eb5cb57c66f74c63ab950de081207cccf52017
-		github.com/tree-sitter/tree-sitter-c:f05e279aedde06a25801c3f2b2cc8ac17fac52ae
-		github.com/tree-sitter/tree-sitter-c-sharp:53a65a908167d6556e1fcdb67f1ee62aac101dda
-		github.com/uyha/tree-sitter-cmake:f6616f1e417ee8b62daf251aa1daa5d73781c596
-		github.com/tree-sitter/tree-sitter-cpp:c61212414a3e95b5f7507f98e83de1d638044adc
-		github.com/tree-sitter/tree-sitter-css:94e10230939e702b4fa3fa2cb5c3bc7173b95d07
-		github.com/elixir-lang/tree-sitter-elixir:f5d7bda543da788bd507b05bd722627dde66c9ec
-		github.com/tree-sitter/tree-sitter-go:2a83dfdd759a632651f852aa4dc0af2525fae5cd
-		github.com/tree-sitter/tree-sitter-haskell:237f4eb4417c28f643a29d795ed227246afb66f9
-		github.com/tree-sitter/tree-sitter-html:d93af487cc75120c89257195e6be46c999c6ba18
-		github.com/tree-sitter/tree-sitter-java:bd6186c24d5eb13b4623efac9d944dcc095c0dad
-		github.com/tree-sitter/tree-sitter-javascript:4a95461c4761c624f2263725aca79eeaefd36cad
-		github.com/tree-sitter/tree-sitter-json:65bceef69c3b0f24c0b19ce67d79f57c96e90fcb
-		github.com/tree-sitter/tree-sitter-julia:12ea597262125fc22fd2e91aa953ac69b19c26ca
-		github.com/latex-lsp/tree-sitter-latex:7f720661de5316c0f8fee956526d4002fa1086d8
-		github.com/cbarrete/tree-sitter-ledger:0cdeb0e51411a3ba5493662952c3039de08939ca
-		github.com/nvim-treesitter/tree-sitter-lua:6f5d40190ec8a0aa8c8410699353d820f4f7d7a6
-		github.com/cstrahan/tree-sitter-nix:50f38ceab667f9d482640edfee803d74f4edeba5
-		github.com/tree-sitter/tree-sitter-ocaml:23d419ba45789c5a47d31448061557716b02750a
-		github.com/tree-sitter/tree-sitter-php:0d63eaf94e8d6c0694551b016c802787e61b3fb2
-		github.com/yusdacra/tree-sitter-protobuf:19c211a01434d9f03efff99f85e19f967591b175
-		github.com/tree-sitter/tree-sitter-python:d6210ceab11e8d812d4ab59c07c81458ec6e5184
-		github.com/tree-sitter/tree-sitter-ruby:dfff673b41df7fadcbb609c6338f38da3cdd018e
-		github.com/tree-sitter/tree-sitter-rust:a360da0a29a19c281d08295a35ecd0544d2da211
-		github.com/tree-sitter/tree-sitter-scala:fb23ed9a99da012d86b7a5059b9d8928607cce29
-		github.com/Himujjal/tree-sitter-svelte:349a5984513b4a4a9e143a6e746120c6ff6cf6ed
-		github.com/tree-sitter/tree-sitter-swift:a22fa5e19bae50098e2252ea96cba3aba43f4c58
-		github.com/ikatyang/tree-sitter-toml:7cff70bbcbbc62001b465603ca1ea88edd668704
-		github.com/tree-sitter/tree-sitter-tsq:b665659d3238e6036e22ed0e24935e60efb39415
-		github.com/tree-sitter/tree-sitter-typescript:3e897ea5925f037cfae2e551f8e6b12eec2a201a
-		github.com/ikatyang/tree-sitter-vue:91fe2754796cd8fba5f229505a23fa08f3546c06
-		github.com/ikatyang/tree-sitter-yaml:0e36bed171768908f331ff7dff9d956bae016efb
-		github.com/maxxnino/tree-sitter-zig:1f27fd1dfe7f352408f01b4894c7825f3a1d6c47
+		github.com/tree-sitter/tree-sitter-agda:ca69cdf485e9ce2b2ef0991a720aa88d87d30231:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-bash:a8eb5cb57c66f74c63ab950de081207cccf52017:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-c:f05e279aedde06a25801c3f2b2cc8ac17fac52ae:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-c-sharp:53a65a908167d6556e1fcdb67f1ee62aac101dda:helix-syntax/languages
+		github.com/uyha/tree-sitter-cmake:f6616f1e417ee8b62daf251aa1daa5d73781c596:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-cpp:c61212414a3e95b5f7507f98e83de1d638044adc:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-css:94e10230939e702b4fa3fa2cb5c3bc7173b95d07:helix-syntax/languages
+		github.com/elixir-lang/tree-sitter-elixir:f5d7bda543da788bd507b05bd722627dde66c9ec:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-go:2a83dfdd759a632651f852aa4dc0af2525fae5cd:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-haskell:237f4eb4417c28f643a29d795ed227246afb66f9:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-html:d93af487cc75120c89257195e6be46c999c6ba18:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-java:bd6186c24d5eb13b4623efac9d944dcc095c0dad:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-javascript:4a95461c4761c624f2263725aca79eeaefd36cad:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-json:65bceef69c3b0f24c0b19ce67d79f57c96e90fcb:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-julia:12ea597262125fc22fd2e91aa953ac69b19c26ca:helix-syntax/languages
+		github.com/latex-lsp/tree-sitter-latex:7f720661de5316c0f8fee956526d4002fa1086d8:helix-syntax/languages
+		github.com/cbarrete/tree-sitter-ledger:0cdeb0e51411a3ba5493662952c3039de08939ca:helix-syntax/languages
+		github.com/nvim-treesitter/tree-sitter-lua:6f5d40190ec8a0aa8c8410699353d820f4f7d7a6:helix-syntax/languages
+		github.com/cstrahan/tree-sitter-nix:50f38ceab667f9d482640edfee803d74f4edeba5:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-ocaml:23d419ba45789c5a47d31448061557716b02750a:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-php:0d63eaf94e8d6c0694551b016c802787e61b3fb2:helix-syntax/languages
+		github.com/yusdacra/tree-sitter-protobuf:19c211a01434d9f03efff99f85e19f967591b175:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-python:d6210ceab11e8d812d4ab59c07c81458ec6e5184:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-ruby:dfff673b41df7fadcbb609c6338f38da3cdd018e:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-rust:a360da0a29a19c281d08295a35ecd0544d2da211:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-scala:fb23ed9a99da012d86b7a5059b9d8928607cce29:helix-syntax/languages
+		github.com/Himujjal/tree-sitter-svelte:349a5984513b4a4a9e143a6e746120c6ff6cf6ed:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-swift:a22fa5e19bae50098e2252ea96cba3aba43f4c58:helix-syntax/languages
+		github.com/ikatyang/tree-sitter-toml:7cff70bbcbbc62001b465603ca1ea88edd668704:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-tsq:b665659d3238e6036e22ed0e24935e60efb39415:helix-syntax/languages
+		github.com/tree-sitter/tree-sitter-typescript:3e897ea5925f037cfae2e551f8e6b12eec2a201a:helix-syntax/languages
+		github.com/ikatyang/tree-sitter-vue:91fe2754796cd8fba5f229505a23fa08f3546c06:helix-syntax/languages
+		github.com/ikatyang/tree-sitter-yaml:0e36bed171768908f331ff7dff9d956bae016efb:helix-syntax/languages
+		github.com/maxxnino/tree-sitter-zig:1f27fd1dfe7f352408f01b4894c7825f3a1d6c47:helix-syntax/languages
 	"
 
 	_git_submodules() {
@@ -188,8 +188,9 @@ else
 		do
 			[[ $submodule =~ .*:.* ]] || continue
 
-			url=${submodule%:*}
+			url=${submodule%%:*}
 			commit=${submodule#*:}
+			commit="${commit%:*}"
 
 			full_url="https://${url}/archive/${commit}.tar.gz -> ${P}_${url##*/}-${commit}.tar.gz"
 			printf '%s\n' "${full_url}"
@@ -206,22 +207,22 @@ else
 	KEYWORDS="~amd64"
 
 	src_prepare() {
-		submodule_path=helix-syntax/languages
-		rm -r ${submodule_path:?}/* || die
-
 		while read -r submodule
 		do
 			[[ $submodule =~ .*:.* ]] || continue
 
-			url=${submodule%:*}
+			url=${submodule%%:*}
 			commit=${submodule#*:}
+			commit="${commit%:*}"
+			path="${submodule##*:}"
 
-			ln -s "../../../${url##*/}-${commit}" "${submodule_path}/${url##*/}" || die
+			rm -r "${path:?}/${url##*/}" || die
+			mv "../${url##*/}-${commit}" "${path}/${url##*/}" || die
 		done <<-EOF
 			${SUBMODULES}
 		EOF
 
-		 eapply_user
+		default
 	}
 fi
 
@@ -232,7 +233,11 @@ RDEPEND=""
 DEPEND="${RDEPEND}"
 BDEPEND=""
 
-PATCHES=( "${FILESDIR}/${P}-core_src_lib.patch" )
+PATCHES=( "${FILESDIR}/${P}-helix-core_src_lib.patch" )
+
+src_configure() {
+	sed -i "s!%%DATADIR%%!${EPREFIX}/usr/share/helix!" helix-core/src/lib.rs || die
+}
 
 src_install() {
 	insinto /usr/share/helix

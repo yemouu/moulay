@@ -29,8 +29,9 @@ else
 		do
 			[[ $submodule =~ .*:.* ]] || continue
 
-			url=${submodule%:*}
+			url=${submodule%%:*}
 			commit=${submodule#*:}
+			commit="${commit%:*}"
 
 			full_url="https://${url}/archive/${commit}.tar.gz -> ${P}_${url##*/}-${commit}.tar.gz"
 			printf '%s\n' "${full_url}"
@@ -47,22 +48,22 @@ else
 	KEYWORDS="~amd64"
 
 	src_prepare() {
-		submodule_path=helix-syntax/languages
-		rm -r ${submodule_path:?}/* || die
-
 		while read -r submodule
 		do
 			[[ $submodule =~ .*:.* ]] || continue
 
-			url=${submodule%:*}
+			url=${submodule%%:*}
 			commit=${submodule#*:}
+			commit="${commit%:*}"
+			path="${submodule##*:}"
 
-			ln -s "../../../${url##*/}-${commit}" "${submodule_path}/${url##*/}" || die
+			rm -r "${path:?}/${url##*/}" || die
+			mv "../${url##*/}-${commit}" "${path}/${url##*/}" || die
 		done <<-EOF
 			${SUBMODULES}
 		EOF
 
-		 eapply_user
+		default
 	}
 fi
 
@@ -72,6 +73,12 @@ SLOT="0"
 RDEPEND=""
 DEPEND="${RDEPEND}"
 BDEPEND=""
+
+PATCHES=( "${FILESDIR}/${P}-helix-core_src_lib.patch" )
+
+src_configure() {
+	sed -i "s!%%DATADIR%%!${EPREFIX}/usr/share/helix!" helix-core/src/lib.rs || die
+}
 
 src_install() {
 	insinto /usr/share/helix
