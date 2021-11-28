@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>meeyou@tuta.io</email>
-  </maintainer>
-  <use>
-    <flag name="grapheme-shaping">Enable shaping of individual grapheme clusters</flag>
-    <flag name="run-shaping">Enable shaping of whole text runs</flag>
-    <flag name="text-shaping">Build with harfbuzz for text shaping support</flag>
-  </use>
+	<maintainer type="person">
+		<email>yemou@tuta.io</email>
+	</maintainer>
+	<use>
+		<flag name="grapheme-shaping">Enable shaping of individual grapheme clusters</flag>
+		<flag name="run-shaping">Enable shaping of whole text runs</flag>
+		<flag name="text-shaping">Build with harfbuzz for text shaping support</flag>
+	</use>
 </pkgmetadata>

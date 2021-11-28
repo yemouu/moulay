@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>meeyou@tuta.io</email>
+		<email>yemou@tuta.io</email>
 	</maintainer>
 	<use>
 		<flag name="secrets">Install a Secret Service API provider for remembering login details</flag>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>meeyou@tuta.io</email>
-  </maintainer>
-  <use>
-    <flag name="bar">Build the bar app</flag>
-    <flag name="dmenu">Build the dmenu app</flag>
-    <flag name="grid">Build the grid app</flag>
-    <flag name="layer-shell">Enable gtk-layer-shell support</flag>
-  </use>
+	<maintainer type="person">
+		<email>yemou@tuta.io</email>
+	</maintainer>
+	<use>
+		<flag name="bar">Build the bar app</flag>
+		<flag name="dmenu">Build the dmenu app</flag>
+		<flag name="grid">Build the grid app</flag>
+		<flag name="layer-shell">Enable gtk-layer-shell support</flag>
+	</use>
 </pkgmetadata>

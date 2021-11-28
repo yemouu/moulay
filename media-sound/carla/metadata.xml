@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
-  <maintainer type="person">
-    <email>meeyou@tuta.io</email>
-  </maintainer>
-    <use>
-     <flag name="gtk2">Build with support for plugins using GTK+ 2</flag>
-     <flag name="juce">Build with support for plugins using JUCE</flag>
-     <flag name="rdf">Get extra information from LADSPA plugins</flag>
-     <flag name="sf2">Build with SF2 support using fluidsynth</flag>
-    </use>
+	<maintainer type="person">
+		<email>yemou@tuta.io</email>
+	</maintainer>
+	<use>
+		<flag name="gtk2">Build with support for plugins using GTK+ 2</flag>
+		<flag name="juce">Build with support for plugins using JUCE</flag>
+		<flag name="rdf">Get extra information from LADSPA plugins</flag>
+		<flag name="sf2">Build with SF2 support using fluidsynth</flag>
+	</use>
 </pkgmetadata>

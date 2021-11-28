@@ -5,7 +5,7 @@ EAPI=7
 
 DESCRIPTION="Simple X background setter inspired by imlibsetroot and feh"
 HOMEPAGE="https://github.com/ttzhou/setroot"
-SRC_URI="https://github.com/ttzhou/setroot/archive/v${PV}.tar.gz"
+SRC_URI="https://github.com/ttzhou/setroot/archive/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"

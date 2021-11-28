@@ -20,12 +20,14 @@ fi
 LICENSE="Apache-2.0"
 SLOT="0"
 IUSE="xgamma"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-DEPEND="
+RDEPEND="
+	${PYTHON_DEPS}
 	x11-libs/libX11
 	x11-libs/libXrandr
 	xgamma? ( x11-apps/xgamma )
 "
-RDEPEND="${DEPEND}"
+DEPEND="${DEPEND}"
 
 PATCHES=( ${FILESDIR}/${PN}-no-manpage-compression.patch )

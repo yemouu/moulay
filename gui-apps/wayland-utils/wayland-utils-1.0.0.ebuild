@@ -6,7 +6,7 @@ EAPI=7
 inherit meson
 
 DESCRIPTION="Display information about supported Wayland protocols"
-HOMEPAGE="https://gitlab.freedesktop.org/wayland/${PN}"
+HOMEPAGE="https://gitlab.freedesktop.org/wayland/wayland-utils"
 
 if [[ ${PV} == 9999 ]]
 then

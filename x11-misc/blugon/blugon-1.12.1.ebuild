@@ -8,18 +8,20 @@ inherit python-r1
 
 DESCRIPTION="A simple Blue Light Filter for X"
 HOMEPAGE="https://github.com/jumper149/blugon"
-SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz"
+SRC_URI="https://github.com/jumper149/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE="xgamma"
+REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
-DEPEND="
+RDEPEND="
+	${PYTHON_DEPS}
 	x11-libs/libX11
 	x11-libs/libXrandr
 	xgamma? ( x11-apps/xgamma )
 "
-RDEPEND="${DEPEND}"
+DEPEND="${RDEPEND}"
 
 PATCHES=( ${FILESDIR}/${PN}-no-manpage-compression.patch )
