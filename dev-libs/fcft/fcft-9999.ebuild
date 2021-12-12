@@ -36,9 +36,6 @@ BDEPEND="
 	dev-libs/tllist
 "
 
-#DOCS=( "README.md" "CHANGELOG.md" )
-#PATCHES=( "${FILESDIR}/gentoo-fhs.patch" )
-
 src_prepare() {
 	default
 
