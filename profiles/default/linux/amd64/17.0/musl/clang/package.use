@@ -1,2 +1,5 @@
 # Fails to compile with these options enabled
 sys-libs/compiler-rt-sanitizers -libfuzzer -gwp-asan -hwasan
+
+# 2021-12-28
+sys-libs/compiler-rt-sanitizers -msan
