@@ -53,6 +53,7 @@ Bugzilla according to the instructions on the
   - [net-im/cchat-gtk](net-im/cchat-gtk)
   - [net-im/fractal](net-im/fractal)
   - [net-im/gotktrix](net-im/gotktrix)
+  - [sys-apps/drm_info](sys-apps/drm_info)
   - [sys-devel/cc-config](sys-devel/cc-config)
   - [x11-misc/blugon](x11-misc/blugon)
   - [x11-misc/boox](x11-misc/boox)
