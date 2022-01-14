@@ -41,7 +41,6 @@ Bugzilla according to the instructions on the
   - [gui-apps/wev](gui-apps/wev)
   - [gui-apps/wlr-randr](gui-apps/wlr-randr)
   - [gui-apps/wlsunset](gui-apps/wlsunset)
-  - [gui-libs/libadwaita](gui-libs/libadwaita)
   - [gui-wm/cage](gui-wm/cage)
   - [gui-wm/gamescope](gui-wm/gamescope)
   - [media-fonts/montserrat](media-fonts/montserrat)
