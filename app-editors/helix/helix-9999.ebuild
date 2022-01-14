@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -70,11 +70,7 @@ fi
 LICENSE="MPL-2.0"
 SLOT="0"
 
-RDEPEND=""
-DEPEND="${RDEPEND}"
-BDEPEND=""
-
-PATCHES=( "${FILESDIR}/${P}-helix-core_src_lib.patch" )
+PATCHES=( "${FILESDIR}/helix-0.5.0-helix-core_src_lib.patch" )
 
 src_configure() {
 	sed -i "s!%%DATADIR%%!${EPREFIX}/usr/share/helix!" helix-core/src/lib.rs || die
