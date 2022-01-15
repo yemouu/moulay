@@ -10,7 +10,7 @@
 #arch	profile_directory			status
 
 # musl profiles
-# @MAINTAINER: yemou@tuta.io
+# @MAINTAINER: yemou@protonmail.com
 amd64	default/linux/amd64/17.0/musl/clang	exp
 
 # vim: set ts=8 noet ft=conf:

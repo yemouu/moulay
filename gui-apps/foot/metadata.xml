@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 	<maintainer type="person">
-		<email>yemou@tuta.io</email>
+		<email>yemou@protonmail.com</email>
 	</maintainer>
 	<use>
 		<flag name="grapheme-clustering">Enables grapheme clustering</flag>
