@@ -1,4 +1,4 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2022 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=8
@@ -24,7 +24,7 @@ else
 	go-module_set_globals
 
 	SRC_URI="
-		https://github.com/diamondburned/${PN}/archive/${PV}.tar.gz -> ${P}.tar.gz
+		https://github.com/diamondburned/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
 		${EGO_SUM_SRC_URI}
 	"
 	KEYWORDS="~amd64"
@@ -32,13 +32,14 @@ fi
 
 LICENSE="AGPL-3"
 SLOT="0"
-IUSE="+secrets"
+IUSE="+secrets +notification-sound"
 
 RDEPEND="
 	dev-libs/glib
 	dev-libs/gobject-introspection
 	gui-libs/gtk:4[introspection]
 	media-libs/graphene[introspection]
+	notification-sound? ( media-libs/libcanberra[gtk3] )
 	secrets? ( virtual/secret-service )
 	x11-libs/gdk-pixbuf[introspection]
 "
