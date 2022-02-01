@@ -1,0 +1,37 @@
+diff --git a/meson.build b/meson.build
+index 3f888b1..35d8589 100644
+--- a/meson.build
++++ b/meson.build
+@@ -45,8 +45,6 @@ sdl_dep = dependency('SDL2')
+ pipewire_dep = dependency('libpipewire-0.3', required: get_option('pipewire'))
+ librt_dep = cppc.find_library('rt', required : get_option('pipewire'))
+ 
+-stb_dep = dependency('stb')
+-
+ wlroots_dep = dependency(
+   'wlroots',
+   version: ['>= 0.15.0', '< 0.16.0'],
+@@ -137,7 +135,7 @@ executable(
+     dep_x11, dep_xdamage, dep_xcomposite, dep_xrender, dep_xext, dep_xfixes,
+     dep_xxf86vm, dep_xres, drm_dep, wayland_server, wayland_protos,
+     xkbcommon, thread_dep, sdl_dep, wlroots_dep,
+-    vulkan_dep, liftoff_dep, dep_xtst, cap_dep, pipewire_dep, librt_dep, stb_dep,
++    vulkan_dep, liftoff_dep, dep_xtst, cap_dep, pipewire_dep, librt_dep,
+   ],
+   install: true,
+ )
+diff --git a/src/steamcompmgr.cpp b/src/steamcompmgr.cpp
+index 36d0d4f..db2aacb 100644
+--- a/src/steamcompmgr.cpp
++++ b/src/steamcompmgr.cpp
+@@ -79,8 +79,8 @@
+ 
+ #define STB_IMAGE_IMPLEMENTATION
+ #define STB_IMAGE_WRITE_IMPLEMENTATION
+-#include <stb_image.h>
+-#include <stb_image_write.h>
++#include <stb/stb_image.h>
++#include <stb/stb_image_write.h>
+ 
+ #define GPUVIS_TRACE_IMPLEMENTATION
+ #include "gpuvis_trace_utils.h"
