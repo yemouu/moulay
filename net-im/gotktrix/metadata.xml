@@ -6,6 +6,5 @@
 	</maintainer>
 	<use>
 		<flag name="secrets">Install a Secret Service API provider for remembering login details</flag>
-	<flag name="notification-sound">Install media-libs/libcanberra as a runtime dependency for notification sounds</flag>
 	</use>
 </pkgmetadata>

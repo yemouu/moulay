@@ -3,7 +3,7 @@
 
 EAPI=8
 
-inherit go-module
+inherit go-module optfeature
 
 DESCRIPTION="Matrix client in Go and GTK4"
 HOMEPAGE="https://github.com/diamondburned/gotktrix"
@@ -32,14 +32,13 @@ fi
 
 LICENSE="AGPL-3"
 SLOT="0"
-IUSE="+secrets +notification-sound"
+IUSE="+secrets"
 
 RDEPEND="
 	dev-libs/glib
 	dev-libs/gobject-introspection
 	gui-libs/gtk:4[introspection]
 	media-libs/graphene[introspection]
-	notification-sound? ( media-libs/libcanberra[gtk3] )
 	secrets? ( virtual/secret-service )
 	x11-libs/gdk-pixbuf[introspection]
 "
@@ -53,4 +52,8 @@ src_compile() {
 src_install() {
 	einstalldocs
 	dobin gotktrix
+}
+
+pkg_postinst() {
+	optfeature "Notification Sounds via libcanberra" media-libs/libcanberra[gtk3]
 }
