@@ -1,0 +1,9 @@
+# Copyright 1999-2022 Gentoo Authors
+# Distributed under the terms of the GNU General Public License v2
+
+# yemou Hannam <yemou@protonmail.com> (2022-02-23)
+# This package can cause build errors with some packages while fixing issues
+# with others. It is not always clear when this happens so I am masking this
+# package. If possible try and patch away execinfo.h instead of using this
+# package.
+dev-libs/libexecinfo
