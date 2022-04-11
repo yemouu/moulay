@@ -54,7 +54,13 @@ RDEPEND="
 DEPEND="${RDEPEND}"
 
 src_compile() {
-	go build $(usex fftw "-tags withfftw" "") $(usex portaudio "-tags withportaudio" "") || die
+	go_tags="-tags "
+	use fftw && go_tags="${go_tags}withfftw,"
+	use portaudio && go_tags="${go_tags}withportaudio"
+	go_tags=${go_tags%,}
+	go_tags=${go_tags%-tags }
+
+	go build $go_tags || die
 }
 
 src_install() {
