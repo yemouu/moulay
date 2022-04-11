@@ -19,6 +19,19 @@ then
 	}
 else
 	EGO_SUM=(
+		"github.com/integrii/flaggy v1.4.4"
+		"github.com/integrii/flaggy v1.4.4/go.mod"
+		"github.com/lawl/pulseaudio v0.0.0-20210928141934-ed754c0c6618"
+		"github.com/lawl/pulseaudio v0.0.0-20210928141934-ed754c0c6618/go.mod"
+		"github.com/mattn/go-runewidth v0.0.9"
+		"github.com/mattn/go-runewidth v0.0.9/go.mod"
+		"github.com/nsf/termbox-go v1.1.1"
+		"github.com/nsf/termbox-go v1.1.1/go.mod"
+		"github.com/pkg/errors v0.9.1"
+		"github.com/pkg/errors v0.9.1/go.mod"
+		"golang.org/x/exp v0.0.0-20191002040644-a1355ae1e2c3"
+		"gonum.org/v1/gonum v0.11.0"
+		"gonum.org/v1/gonum v0.11.0/go.mod"
 	)
 
 	go-module_set_globals
