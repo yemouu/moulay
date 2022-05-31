@@ -39,8 +39,15 @@ BDEPEND="
 	dev-libs/tllist
 	dev-libs/wayland-protocols
 	grapheme-clustering? ( dev-libs/libutf8proc )
-	pgo? ( gui-wm/cage )
+	pgo? ( || (
+			gui-wm/hikari
+			gui-wm/sway
+			gui-wm/wayfire
+		)
+	)
 "
+# I haven't tested hikari, ebuild hard depends on wlroots 15 and wayfire and cage haven't been
+# updated yet
 
 DOC=( "README.md" "CHANGELOG.md" "foot.ini" )
 PATCHES=( "${FILESDIR}/foot-1.9.0-gentoo-fhs.patch" )
@@ -52,13 +59,22 @@ src_prepare() {
 
 	if use pgo
 	then
-		mkdir -p "${WORKDIR}/pgo/run" || die
+		for comp in hikari sway wayfire
+		do
+			command -v "$comp" || continue
+			wl_comp=$comp
+			break
+		done
+		wl_comp=wayfire
+
+		mkdir -p "${WORKDIR}/pgo" || die
 		PGO_WORK_DIR="${WORKDIR}/pgo"
-		export XDG_RUNTIME_DIR="${PGO_WORK_DIR}/run"
+		export XDG_RUNTIME_DIR="${PGO_WORK_DIR}"
 
 		WLR_BACKENDS=headless
-		WLR_RENDERER=pixman
-		export WLR_BACKENDS WLR_RENDERER
+		WLR_RENDERER_ALLOW_SOFTWARE=1
+		# WLR_RENDERER=pixman
+		export WLR_BACKENDS WLR_RENDERER_ALLOW_SOFTWARE #WLR_RENDERER
 
 		render_cards=$(echo -n /dev/dri/render* | sed 's/ /:/g')
 		addpredict "${render_cards}"
@@ -85,12 +101,14 @@ src_configure() {
 		old_pwd=$(pwd)
 		cd "${BUILD_DIR}" || die
 
+		( $wl_comp || die "pgo failed" ) &
+
 		meson configure -Db_pgo=generate || die
 		eninja
 
 		temp_file=${PGO_WORK_DIR}/temp
 		./footclient --version || die "pgo failed"
-		cage -- ./foot -c /dev/null -t xterm \
+		./foot -c /dev/null -t xterm \
 			--override tweak.grapheme-shaping=no \
 			sh -c "${S}/scripts/generate-alt-random-writes.py \
 			--scroll --scroll-region --colors-regular --colors-bright \
