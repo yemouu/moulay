@@ -31,11 +31,29 @@ fi
 LICENSE="MPL-2.0"
 SLOT="0"
 
+RDEPEND="dev-libs/tree-sitter"
+DEPEND="${RDEPEND}"
+
 src_compile() {
 	export HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1
 	cargo_src_compile
 }
 
 src_install() {
+	insinto /usr/share/helix
+	doins -r runtime
+
 	cargo_src_install --path helix-term
+}
+
+pkg_postinst() {
+	elog "You will need to copy /usr/share/helix/runtime into your \$HELIX_RUNTIME"
+	elog "For syntax highlighting and other features. "
+	elog ""
+	elog "Run: "
+	elog "cp -r /usr/share/helix/runtime ~/.config/helix/runtime"
+	elog ""
+	elog "To install tree-sitter grammars for helix run the following:"
+	elog "hx -g fetch"
+	elog "hx -g build"
 }
