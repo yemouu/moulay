@@ -31,6 +31,11 @@ fi
 LICENSE="MPL-2.0"
 SLOT="0"
 
+src_compile() {
+	export HELIX_DISABLE_AUTO_GRAMMAR_BUILD=1
+	cargo_src_compile
+}
+
 src_install() {
 	cargo_src_install --path helix-term
 }
