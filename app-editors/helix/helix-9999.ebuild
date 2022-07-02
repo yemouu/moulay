@@ -21,64 +21,16 @@ then
 		cargo_live_src_unpack
 	}
 else
-	SUBMODULES="
-	"
-
-	_git_submodules() {
-		while read -r submodule
-		do
-			[[ $submodule =~ .*:.* ]] || continue
-
-			url=${submodule%%:*}
-			commit=${submodule#*:}
-			commit="${commit%:*}"
-
-			full_url="https://${url}/archive/${commit}.tar.gz -> ${P}_${url##*/}-${commit}.tar.gz"
-			printf '%s\n' "${full_url}"
-		done <<-EOF
-			"${SUBMODULES}"
-		EOF
-	}
-
 	SRC_URI="
-		https://github.com/helix-editor/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz
+		https://github.com/helix-editor/${PN}/archive/refs/tags/${PV}.tar.gz -> ${P}.tar.gz
 		$(cargo_crate_uris "${CRATES}")
-		$(_git_submodules)
 	"
 	KEYWORDS="~amd64"
-
-	src_prepare() {
-		while read -r submodule
-		do
-			[[ $submodule =~ .*:.* ]] || continue
-
-			url=${submodule%%:*}
-			commit=${submodule#*:}
-			commit="${commit%:*}"
-			path="${submodule##*:}"
-
-			rm -r "${path:?}/${url##*/}" || die
-			mv "../${url##*/}-${commit}" "${path}/${url##*/}" || die
-		done <<-EOF
-			${SUBMODULES}
-		EOF
-
-		default
-	}
 fi
 
 LICENSE="MPL-2.0"
 SLOT="0"
 
-PATCHES=( "${FILESDIR}/helix-0.5.0-helix-core_src_lib.patch" )
-
-src_configure() {
-	sed -i "s!%%DATADIR%%!${EPREFIX}/usr/share/helix!" helix-core/src/lib.rs || die
-}
-
 src_install() {
-	insinto /usr/share/helix
-	doins -r runtime
-
 	cargo_src_install --path helix-term
 }
