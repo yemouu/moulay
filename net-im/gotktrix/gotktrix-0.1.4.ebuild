@@ -243,6 +243,7 @@ fi
 LICENSE="AGPL-3"
 SLOT="0"
 IUSE="+secrets"
+RESTRICT="mirror"
 
 RDEPEND="
 	dev-libs/glib
