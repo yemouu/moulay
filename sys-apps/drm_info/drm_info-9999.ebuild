@@ -6,15 +6,16 @@ EAPI=8
 inherit meson
 
 DESCRIPTION="Small utility to dump info about DRM devices"
-HOMEPAGE="https://github.com/ascent12/drm_info"
+HOMEPAGE="https://gitlab.freedesktop.org/emersion/drm_info"
 
 if [[ ${PV} == 9999 ]]
 then
 	inherit git-r3
-	EGIT_REPO_URI="https://github.com/ascent12/drm_info"
+	EGIT_REPO_URI="https://gitlab.freedesktop.org/emersion/${PN}"
 else
-	SRC_URI="https://github.com/ascent12/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
+	SRC_URI="https://gitlab.freedesktop.org/emersion/${PN}/-/archive/v${PV}/${PN}-v${PV}.tar.gz -> ${P}.tar.gz"
 	KEYWORDS="~amd64"
+	S="${WORKDIR}/${PN}-v${PV}"
 fi
 
 LICENSE="MIT"
