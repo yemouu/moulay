@@ -33,6 +33,7 @@ Bugzilla according to the instructions on the
   - [dev-python/pyliblo](dev-python/pyliblo)
   - [dev-tex/texlab](dev-tex/texlab)
   - [dev-util/kak-lsp](dev-util/kak-lsp)
+  - [dev-util/rust-analyzer](dev-util/rust-analyzer)
   - [dev-util/zls](dev-util/zls)
   - [gui-apps/nwg-launchers](gui-apps/nwg-launchers)
   - [gui-apps/wev](gui-apps/wev)
